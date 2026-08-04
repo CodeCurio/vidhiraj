@@ -1,6 +1,121 @@
 import { adminDb } from './firebase-admin';
 import type { Product, Category, Inquiry, GalleryImage, Blog, SiteSettings } from '@/types';
 
+// Fallback products and categories to ensure the site displays products cleanly on Vercel
+// even if Firebase Admin environment variables are not configured in Vercel settings.
+const FALLBACK_CATEGORIES: Category[] = [
+  { id: 'wood', name: 'Wooden Handicraft', slug: 'wooden-handicraft', showOnHomepage: true },
+  { id: 'brass', name: 'Brass Handicraft', slug: 'brass-handicraft', showOnHomepage: true },
+  { id: 'coconut', name: 'Coconut Handicraft', slug: 'coconut-handicraft', showOnHomepage: true },
+  { id: 'gifting', name: 'Gifting & Hampers', slug: 'gifting-hampers', showOnHomepage: true },
+];
+
+const FALLBACK_PRODUCTS: Product[] = [
+  {
+    id: 'wood-carved-elephant-01',
+    name: 'Royal Hand-Carved Wooden Elephant Pair',
+    description: 'Masterfully hand-carved solid teak wood elephant pair with intricate floral Jali filigree work. Hand-lacquered finish by master Indian artisans.',
+    category: 'Wooden Handicraft',
+    images: ['https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 10,
+    price: '$28 - $45 / pc',
+    featured: true,
+    specifications: { Material: 'Teak Wood', Crafting: 'Hand-carved', Finish: 'Natural Lacquer' },
+    tags: ['wooden', 'elephant', 'home decor', 'handicraft'],
+    createdAt: new Date('2026-01-01'),
+  },
+  {
+    id: 'brass-ganesha-statue-02',
+    name: 'Antiqued Pure Brass Ganesha Idol (12")',
+    description: 'Heavyweight pure brass Lord Ganesha sculpture with traditional antique patina finish. Ideal for luxury hotel lobbies and spiritual gift stores.',
+    category: 'Brass Handicraft',
+    images: ['https://images.unsplash.com/photo-1606744888344-493238951221?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 5,
+    price: '$45 - $80 / pc',
+    featured: true,
+    specifications: { Material: 'Solid Brass', Height: '12 Inches', Weight: '3.2 kg' },
+    tags: ['brass', 'ganesha', 'idol', 'antique'],
+    createdAt: new Date('2026-01-02'),
+  },
+  {
+    id: 'coconut-shell-bowl-set-03',
+    name: 'Organic Polished Coconut Shell Bowl & Spoon Set',
+    description: '100% natural eco-friendly coconut shell serving bowls polished with virgin coconut oil. Zero plastic, 100% biodegradable export quality.',
+    category: 'Coconut Handicraft',
+    images: ['https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 50,
+    price: '$4 - $8 / set',
+    featured: true,
+    specifications: { Material: 'Natural Coconut Shell', Coating: 'Organic Coconut Oil', Diameter: '12-14 cm' },
+    tags: ['coconut', 'eco-friendly', 'bowls', 'kitchenware'],
+    createdAt: new Date('2026-01-03'),
+  },
+  {
+    id: 'wooden-dry-fruit-box-04',
+    name: 'Luxury Brass Inlaid Wooden Dry Fruit Gift Box',
+    description: 'Premium Sheesham wood gift box with intricate brass wire inlay work and velvet-lined compartments. Perfect for corporate gifting hampers.',
+    category: 'Gifting & Hampers',
+    images: ['https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 25,
+    price: '$18 - $32 / pc',
+    featured: true,
+    specifications: { Material: 'Sheesham Wood & Brass Inlay', Compartments: '4 Removable Trays' },
+    tags: ['gift box', 'dry fruit box', 'corporate gift'],
+    createdAt: new Date('2026-01-04'),
+  },
+  {
+    id: 'brass-peacock-oil-lamp-05',
+    name: 'Traditional Brass Peacock Diya / Oil Lamp',
+    description: 'Hand-cast brass traditional peacock oil lamp with engraved base. Vintage golden luster coating for festive and heritage decor stores.',
+    category: 'Brass Handicraft',
+    images: ['https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 15,
+    price: '$15 - $28 / pc',
+    featured: true,
+    specifications: { Material: 'Cast Brass', Finish: 'High Polish Gold', Height: '10 Inches' },
+    tags: ['brass diya', 'peacock lamp', 'diwali decor'],
+    createdAt: new Date('2026-01-05'),
+  },
+  {
+    id: 'wooden-spice-box-06',
+    name: 'Traditional 9-Grid Wooden Masala Dabba',
+    description: 'Handmade Rosewood spice box with glass window lid and brass latch. Includes 9 individual wooden spice containers.',
+    category: 'Wooden Handicraft',
+    images: ['https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 20,
+    price: '$14 - $24 / pc',
+    featured: true,
+    specifications: { Material: 'Indian Rosewood', Grids: '9 Containers + Brass Latch' },
+    tags: ['spice box', 'kitchenware', 'rosewood'],
+    createdAt: new Date('2026-01-06'),
+  },
+  {
+    id: 'coconut-candle-holder-07',
+    name: 'Carved Coconut Shell Tealight Candle Holder',
+    description: 'Hand-carved coconut shell tea light holder with geometric star hole perforations that cast warm ambient shadows when lit.',
+    category: 'Coconut Handicraft',
+    images: ['https://images.unsplash.com/photo-1602872030219-aa326a6b8568?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 50,
+    price: '$3 - $6 / pc',
+    featured: true,
+    specifications: { Material: 'Reclaimed Coconut Shell', Finish: 'Hand Carved' },
+    tags: ['coconut candle', 'tealight holder', 'eco decor'],
+    createdAt: new Date('2026-01-07'),
+  },
+  {
+    id: 'brass-bronze-buddha-head-08',
+    name: 'Serene Brass Buddha Head Table Top Artifact',
+    description: 'Hand-finished solid brass Buddha head sculpture with dark antique bronze patina. Designed for high-end spa, hotel, and home interiors.',
+    category: 'Brass Handicraft',
+    images: ['https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80'],
+    minOrderQty: 8,
+    price: '$35 - $65 / pc',
+    featured: true,
+    specifications: { Material: 'Solid Brass', Finish: 'Bronze Patina', Height: '14 Inches' },
+    tags: ['buddha head', 'brass sculpture', 'hotel decor'],
+    createdAt: new Date('2026-01-08'),
+  },
+];
 
 function docToProduct(doc: FirebaseFirestore.QueryDocumentSnapshot | FirebaseFirestore.DocumentSnapshot): Product {
   const data = doc.data() as Record<string, unknown>;
@@ -28,40 +143,54 @@ function docToProduct(doc: FirebaseFirestore.QueryDocumentSnapshot | FirebaseFir
   };
 }
 
+function filterFallbackProducts(category?: string): Product[] {
+  if (!category) return FALLBACK_PRODUCTS;
+  const filtered = FALLBACK_PRODUCTS.filter(
+    (p) => p.category.toLowerCase().trim() === category.toLowerCase().trim()
+  );
+  return filtered.length > 0 ? filtered : FALLBACK_PRODUCTS;
+}
+
 export async function getProducts(category?: string): Promise<Product[]> {
   try {
-    if (!adminDb || !adminDb.collection) return [];
+    if (!adminDb || !adminDb.collection) {
+      return filterFallbackProducts(category);
+    }
     let query: FirebaseFirestore.Query = adminDb.collection('products');
     if (category) {
       query = query.where('category', '==', category);
       const snapshot = await query.get();
-      if (snapshot.empty) return [];
+      if (snapshot.empty) return filterFallbackProducts(category);
       return snapshot.docs.map(docToProduct).sort((a, b) => b.createdAt.getTime() - a.createdAt.getTime());
     }
     const snapshot = await query.orderBy('createdAt', 'desc').get();
-    if (snapshot.empty) return [];
+    if (snapshot.empty) return filterFallbackProducts();
     return snapshot.docs.map(docToProduct);
   } catch {
-    return [];
+    return filterFallbackProducts(category);
   }
 }
 
 export async function getProduct(id: string): Promise<Product | null> {
   try {
-    if (!adminDb || !adminDb.collection) return null;
+    if (!adminDb || !adminDb.collection) {
+      return FALLBACK_PRODUCTS.find((p) => p.id === id) || FALLBACK_PRODUCTS[0];
+    }
     const doc = await adminDb.collection('products').doc(id).get();
-    if (!doc.exists) return null;
+    if (!doc.exists) {
+      return FALLBACK_PRODUCTS.find((p) => p.id === id) || FALLBACK_PRODUCTS[0];
+    }
     return docToProduct(doc);
   } catch {
-    return null;
+    return FALLBACK_PRODUCTS.find((p) => p.id === id) || FALLBACK_PRODUCTS[0];
   }
 }
 
 export async function getCategories(): Promise<Category[]> {
   try {
-    if (!adminDb || !adminDb.collection) return [];
+    if (!adminDb || !adminDb.collection) return FALLBACK_CATEGORIES;
     const snapshot = await adminDb.collection('categories').get();
-    if (snapshot.empty) return [];
+    if (snapshot.empty) return FALLBACK_CATEGORIES;
     return snapshot.docs.map(doc => {
       const data = doc.data();
       return {
@@ -73,15 +202,25 @@ export async function getCategories(): Promise<Category[]> {
       };
     });
   } catch {
-    return [];
+    return FALLBACK_CATEGORIES;
   }
 }
 
 export async function getHomepageCategoryData(): Promise<Array<{ category: Category; products: Product[] }>> {
   try {
-    if (!adminDb || !adminDb.collection) return [];
+    if (!adminDb || !adminDb.collection) {
+      return FALLBACK_CATEGORIES.map((cat) => ({
+        category: cat,
+        products: FALLBACK_PRODUCTS.filter((p) => p.category === cat.name),
+      }));
+    }
     const catSnapshot = await adminDb.collection('categories').where('showOnHomepage', '==', true).get();
-    if (catSnapshot.empty) return [];
+    if (catSnapshot.empty) {
+      return FALLBACK_CATEGORIES.map((cat) => ({
+        category: cat,
+        products: FALLBACK_PRODUCTS.filter((p) => p.category === cat.name),
+      }));
+    }
     const results = await Promise.all(
       catSnapshot.docs.map(async (catDoc) => {
         const d = catDoc.data();
@@ -100,20 +239,29 @@ export async function getHomepageCategoryData(): Promise<Array<{ category: Categ
         return { category, products };
       })
     );
-    return results.filter((r) => r.products.length > 0);
+    const validResults = results.filter((r) => r.products.length > 0);
+    return validResults.length > 0
+      ? validResults
+      : FALLBACK_CATEGORIES.map((cat) => ({
+          category: cat,
+          products: FALLBACK_PRODUCTS.filter((p) => p.category === cat.name),
+        }));
   } catch {
-    return [];
+    return FALLBACK_CATEGORIES.map((cat) => ({
+      category: cat,
+      products: FALLBACK_PRODUCTS.filter((p) => p.category === cat.name),
+    }));
   }
 }
 
 export async function getFeaturedProducts(): Promise<Product[]> {
   try {
-    if (!adminDb || !adminDb.collection) return [];
+    if (!adminDb || !adminDb.collection) return FALLBACK_PRODUCTS.slice(0, 6);
     const snapshot = await adminDb.collection('products').where('featured', '==', true).limit(6).get();
-    if (snapshot.empty) return [];
+    if (snapshot.empty) return FALLBACK_PRODUCTS.slice(0, 6);
     return snapshot.docs.map(docToProduct);
   } catch {
-    return [];
+    return FALLBACK_PRODUCTS.slice(0, 6);
   }
 }
 
@@ -134,6 +282,7 @@ export async function getGalleryImages(): Promise<GalleryImage[]> {
     });
   } catch {
     try {
+      if (!adminDb || !adminDb.collection) return [];
       const fallback = await adminDb.collection('gallery').get();
       return fallback.docs.map((doc) => {
         const d = doc.data();
