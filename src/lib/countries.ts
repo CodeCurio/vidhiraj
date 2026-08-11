@@ -38,10 +38,10 @@ const countries: Record<string, CountryData> = {
     seaFreightDays: '20–28 days (East Coast) / 18–23 days (West Coast)',
     carriers: ['DHL', 'FedEx', 'UPS', 'Aramex'],
     importDuty: '0–5.1% depending on HS code',
-    importDutyNote: 'Wooden handicrafts (HS 4420): 3.2–5.1%. Brass figurines (HS 8306): 0%. Coconut shell (HS 1404): 0%. Most items under $800 qualify for CBP de minimis exemption.',
+    importDutyNote: 'Wooden handicrafts (HS 4420): 3.2–5.1%. Brass figurines (HS 8306): 0%. Most items under $800 qualify for CBP de minimis exemption.',
     vatGst: 'No federal VAT. State sales tax varies — typically not applicable on B2B wholesale imports.',
     customsTip: 'ISF (Importer Security Filing) required 24 hours before loading for sea shipments. CBP Form 3461 for air. Use a licensed customs broker (CHB) to speed clearance.',
-    popularProducts: ['Wooden elephant figurines', 'Brass Ganesha statues', 'Coconut shell bowls', 'Hand-carved wooden trays', 'Brass candle holders', 'Wooden keychains bulk'],
+    popularProducts: ['Wooden elephant figurines', 'Brass Ganesha statues', 'Hand-carved wooden trays', 'Brass candle holders', 'Wooden keychains bulk'],
     testimonial: {
       name: 'James Kowalski',
       company: 'Global Crafts Import LLC, USA',
@@ -49,12 +49,11 @@ const countries: Record<string, CountryData> = {
     },
     faqs: [
       { q: 'Do I need a customs broker to import handicrafts from India to the USA?', a: 'For commercial shipments over $2,500, using a licensed US Customs Broker (CHB) is strongly recommended. They handle CBP entry filing, duty payment, and ISF filing for sea freight. For smaller air freight orders under $2,500, FedEx/DHL often handle clearance automatically.' },
-      { q: 'What are the import duties on Indian handicrafts in the USA?', a: 'Most wooden handicrafts fall under HS 4420 with duties of 3.2–5.1%. Brass figurines (HS 8306) are typically 0%. Coconut shell products (HS 1404) at 0%. We provide the correct HS code on every commercial invoice.' },
-      { q: 'Can I get handicrafts shipped to my Amazon FBA warehouse?', a: 'Yes. We regularly ship to Amazon FBA warehouses across the USA. We follow Amazon\'s prep requirements including labeling, poly-bagging, and box dimensions. Share your FBA shipping plan and we handle the rest.' },
-    ],
+      { q: 'What are the import duties on Indian handicrafts in the USA?', a: 'Most wooden handicrafts fall under HS 4420 with duties of 3.2–5.1%. Brass figurines (HS 8306) are typically 0%. We provide the correct HS code on every commercial invoice.' },
+      { q: 'Can I get handicrafts shipped to my Amazon FBA warehouse?', a: 'Yes. We regularly ship to Amazon FBA warehouses across the USA. We follow Amazon\'s prep requirements including labeling, poly-bagging, and box dimensions. Share your FBA shipping plan and we handle the rest.' }],
     keywords: ['import handicrafts from india to usa', 'indian handicraft supplier usa', 'wholesale wooden artifacts usa', 'brass figurines wholesale usa', 'handmade indian gifts wholesale america'],
     metaTitle: 'Indian Handicrafts Wholesale for USA — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale handcrafted wooden artifacts, brass figurines & coconut handicrafts from India to USA. DHL delivery in 4–6 days. Factory-direct pricing. 50+ American buyers trust us.',
+    metaDescription: 'Import wholesale handcrafted wooden artifacts, brass figurines from India to USA. DHL delivery in 4–6 days. Factory-direct pricing. 50+ American buyers trust us.',
   },
 
   uk: {
@@ -66,7 +65,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: '£',
     region: 'Europe',
     headline: 'Indian Handicraft Supplier for the United Kingdom',
-    subheadline: 'Premium handmade wooden, brass & coconut handicrafts shipped to UK in 3–5 days.',
+    subheadline: 'Premium handmade wooden, brass shipped to UK in 3–5 days.',
     airFreightDays: '3–5 business days',
     seaFreightDays: '22–28 days',
     carriers: ['DHL', 'FedEx', 'UPS'],
@@ -74,7 +73,7 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Post-Brexit UK Global Tariff applies. Wooden handicrafts (HS 4420): 0–3.5%. Brass items (HS 8306): 0%. UK–India FTA negotiations ongoing — duties may reduce further. EORI number required for UK importers.',
     vatGst: '20% UK Import VAT — fully reclaimable by VAT-registered businesses on your next VAT return.',
     customsTip: 'You need a UK EORI number to import commercially. Commodity codes (UK equivalent of HS codes) required on customs declarations. Use a freight forwarder for sea shipments; DHL/FedEx handle customs automatically for air shipments.',
-    popularProducts: ['Wooden home decor wholesale', 'Brass decorative figurines', 'Coconut shell candles', 'Handmade gift sets', 'Artisan wooden boxes', 'Eco-friendly handicrafts'],
+    popularProducts: ['Wooden home decor wholesale', 'Brass decorative figurines', 'Handmade gift sets', 'Artisan wooden boxes', 'Eco-friendly handicrafts'],
     testimonial: {
       name: 'Sarah Mitchell',
       company: 'Artisan Boutique Ltd., United Kingdom',
@@ -83,11 +82,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply when importing Indian handicrafts to the UK?', a: 'Under the UK Global Tariff post-Brexit, most wooden handicrafts (HS 4420) attract 0–3.5% duty. Brass items are typically 0%. Import VAT at 20% applies but is fully reclaimable for VAT-registered UK businesses. We provide correct commodity codes on all invoices.' },
       { q: 'Do I need a UK EORI number to import from India?', a: 'Yes. A UK EORI (Economic Operator Registration and Identification) number is required for all commercial imports into the UK. You can apply for free at HMRC. Your freight forwarder will also need this number for customs declarations.' },
-      { q: 'Can you ship directly to our UK warehouse or retail shop?', a: 'Yes. We ship directly to any UK address via DHL or FedEx. Delivery address can be your warehouse, retail shop, Amazon FBA UK centre, or any other UK destination. We notify you with tracking immediately upon dispatch.' },
-    ],
+      { q: 'Can you ship directly to our UK warehouse or retail shop?', a: 'Yes. We ship directly to any UK address via DHL or FedEx. Delivery address can be your warehouse, retail shop, Amazon FBA UK centre, or any other UK destination. We notify you with tracking immediately upon dispatch.' }],
     keywords: ['indian handicraft supplier uk', 'wholesale handicrafts from india uk', 'buy wooden handicrafts uk wholesale', 'brass figurines wholesale uk', 'handmade indian decor uk'],
     metaTitle: 'Indian Handicraft Wholesale Supplier for UK — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Wholesale handcrafted Indian handicrafts shipped to UK in 3–5 days. Wooden artifacts, brass figurines, coconut products. Factory-direct pricing. Trusted by UK boutiques & retailers.',
+    metaDescription: 'Wholesale handcrafted Indian handicrafts shipped to UK in 3–5 days. Wooden artifacts & brass figurines. Factory-direct pricing. Trusted by UK boutiques & retailers.',
   },
 
   germany: {
@@ -116,8 +114,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'Welche Importzölle gelten für indisches Kunsthandwerk in Deutschland?', a: 'Unter dem EU-GSP-Schema können viele indische Kunsthandwerksprodukte zollfrei oder mit reduzierten Zöllen importiert werden. Holzartikel (HS 4420) sind typischerweise 0–2,7%. Messing-Artikel (HS 8306): 0%. Wir stellen alle erforderlichen GSP-Zertifikate (Formblatt A) aus.' },
       { q: 'Can you provide GSP Form A certificate for Germany/EU imports?', a: 'Yes. We provide the GSP Certificate of Origin (Form A / REX declaration) for all shipments to EU countries including Germany. This document allows your goods to benefit from EU preferential duty rates under the Generalised Scheme of Preferences.' },
-      { q: 'Do you ship to trade fair locations in Germany (e.g. Ambiente Frankfurt)?', a: 'Yes. We ship to Messe Frankfurt, Messe Düsseldorf, and other German trade fair venues. We recommend planning your order 60 days in advance to ensure arrival before your show date. We provide packing tailored for exhibition display.' },
-    ],
+      { q: 'Do you ship to trade fair locations in Germany (e.g. Ambiente Frankfurt)?', a: 'Yes. We ship to Messe Frankfurt, Messe Düsseldorf, and other German trade fair venues. We recommend planning your order 60 days in advance to ensure arrival before your show date. We provide packing tailored for exhibition display.' }],
     keywords: ['indischer kunsthandwerk grosshandel', 'holzartikel aus indien kaufen', 'messigfiguren grosshandel deutschland', 'indischer handicraft lieferant deutschland', 'import handicrafts india germany'],
     metaTitle: 'Indisches Kunsthandwerk Großhändler Deutschland — Import aus Indien | Vidhiraj Global Impex',
     metaDescription: 'Großhandel für handgefertigtes indisches Kunsthandwerk nach Deutschland. Holzartikel, Messing-Figuren, Kokosnuss-Produkte. EU-GSP-Zertifikat verfügbar. Lieferung in 4–6 Tagen.',
@@ -132,7 +129,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: 'A$',
     region: 'Asia Pacific',
     headline: 'Import Indian Handicrafts Wholesale to Australia',
-    subheadline: 'Handmade wooden artifacts, brass figurines & coconut handicrafts — shipped from India to Australia in 5–8 days.',
+    subheadline: 'Handmade wooden artifacts, brass figurines — shipped from India to Australia in 5–8 days.',
     airFreightDays: '5–8 business days',
     seaFreightDays: '18–22 days',
     carriers: ['DHL', 'FedEx', 'Aramex'],
@@ -140,16 +137,15 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'The India–Australia Economic Cooperation and Trade Agreement (AI-ECTA) signed in 2022 has reduced duties on many handicraft categories to 0%. Wooden handicrafts and brass items typically 0%. ABN required for commercial imports.',
     vatGst: '10% Australian GST applies on imports over A$1,000. For B2B buyers with GST registration, this is fully claimable as input tax credit.',
     customsTip: 'Australian Border Force (ABF) enforces strict biosecurity rules — all wooden products must be declared and may require heat treatment (ISPM-15 compliant fumigation). We provide compliant phytosanitary certificates and ISPM-15 treated packaging on request.',
-    popularProducts: ['Wooden home decor Australia', 'Eco-friendly handicrafts', 'Brass decorative pieces', 'Coconut shell tableware', 'Handmade gift boxes', 'Artisan wooden sculptures'],
+    popularProducts: ['Wooden home decor Australia', 'Eco-friendly handicrafts', 'Brass decorative pieces', 'Handmade gift boxes', 'Artisan wooden sculptures'],
     testimonial: null,
     faqs: [
       { q: 'Do wooden handicrafts from India require biosecurity treatment for Australia?', a: 'Yes. Australia has strict biosecurity requirements. Wooden products from India must be treated to ISPM-15 standards (heat treatment or fumigation with methyl bromide) to prevent pests. We provide ISPM-15 compliant export packaging and the required phytosanitary certificate from Indian authorities.' },
       { q: 'What is the import duty on Indian handicrafts in Australia?', a: 'Under the India–Australia ECTA (signed 2022), many Indian handicraft categories qualify for 0% import duty. Remaining items typically attract 0–5% duty. A GST of 10% applies on commercial imports over A$1,000, which is claimable as input tax credit for GST-registered Australian businesses.' },
-      { q: 'How long does sea freight from India take to Australia?', a: 'Sea freight from India to Australian ports (Melbourne, Sydney, Brisbane) takes approximately 18–22 days. LCL (Less than Container Load) is cost-effective for orders under 10 CBM. We work with freight forwarders that have regular India–Australia routes.' },
-    ],
+      { q: 'How long does sea freight from India take to Australia?', a: 'Sea freight from India to Australian ports (Melbourne, Sydney, Brisbane) takes approximately 18–22 days. LCL (Less than Container Load) is cost-effective for orders under 10 CBM. We work with freight forwarders that have regular India–Australia routes.' }],
     keywords: ['import handicrafts india australia', 'indian handicraft supplier australia', 'wholesale wooden decor australia', 'buy handmade indian products australia', 'eco friendly handicrafts wholesale australia'],
     metaTitle: 'Indian Handicrafts Wholesale for Australia — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Australia. Wooden artifacts, brass figurines & coconut products. 0% duty under India–Australia ECTA. Ships in 5–8 days by DHL.',
+    metaDescription: 'Import wholesale Indian handicrafts to Australia. Wooden artifacts, brass figurines. 0% duty under India–Australia ECTA. Ships in 5–8 days by DHL.',
   },
 
   uae: {
@@ -169,7 +165,7 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'GCC Unified Customs Law applies a standard 5% customs duty on most goods. Handicrafts typically attract 5%. Some categories may be exempt. India–UAE CEPA (signed 2022) has reduced duties to 0% for many product categories — confirm eligibility for your HS code.',
     vatGst: '5% UAE VAT applies. Recoverable by VAT-registered UAE businesses.',
     customsTip: 'UAE imports via Dubai (Jebel Ali port for sea, DXB for air) process quickly. DUTIABLE VALUE = CIF (Cost + Insurance + Freight). Aramex has excellent India–UAE routes and is often the most cost-effective carrier for this corridor.',
-    popularProducts: ['Brass decor for hotels', 'Wooden gift sets Dubai', 'Luxury handicraft hampers', 'Coconut shell home decor', 'Indian antique replicas', 'Hospitality decor wholesale'],
+    popularProducts: ['Brass decor for hotels', 'Wooden gift sets Dubai', 'Luxury handicraft hampers', 'Indian antique replicas', 'Hospitality decor wholesale'],
     testimonial: {
       name: 'Omar Al Rashid',
       company: 'Dubai Lifestyle Co., UAE',
@@ -178,11 +174,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'How quickly can you ship handicrafts from India to Dubai/UAE?', a: 'Air freight via DHL, Aramex, or FedEx takes just 2–3 business days from our Chandigarh facility to Dubai or Abu Dhabi. Sea freight via Jebel Ali port takes 10–14 days. For urgent orders, we offer same-day dispatch Monday–Saturday.' },
       { q: 'Does the India–UAE CEPA agreement reduce import duties?', a: 'Yes. The India–UAE Comprehensive Economic Partnership Agreement (CEPA) signed in 2022 eliminates or reduces import duties on many Indian export categories. Several handicraft HS codes now qualify for 0% duty instead of the standard 5% GCC rate. We confirm applicable duty rates in your quotation.' },
-      { q: 'Can you supply handicrafts for Dubai hotels, resorts, or hospitality businesses?', a: 'Yes. We supply Indian handicrafts to hotels, resorts, spas, and hospitality businesses across the UAE and GCC. We offer custom branding, luxury packaging, and large-volume hotel amenity supply. Minimum order quantities are flexible for hospitality sector clients.' },
-    ],
+      { q: 'Can you supply handicrafts for Dubai hotels, resorts, or hospitality businesses?', a: 'Yes. We supply Indian handicrafts to hotels, resorts, spas, and hospitality businesses across the UAE and GCC. We offer custom branding, luxury packaging, and large-volume hotel amenity supply. Minimum order quantities are flexible for hospitality sector clients.' }],
     keywords: ['indian handicraft exporter uae', 'wholesale handicrafts dubai', 'indian handicraft supplier gcc', 'wooden decor wholesale dubai', 'buy handicrafts india uae'],
     metaTitle: 'Indian Handicraft Exporter to UAE & Dubai — Wholesale from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to UAE, Dubai & GCC in 2–3 days. Wooden artifacts, brass decor & coconut products. 0% duty under India–UAE CEPA for many items.',
+    metaDescription: 'Import wholesale Indian handicrafts to UAE, Dubai & GCC in 2–3 days. Wooden artifacts, brass decor. 0% duty under India–UAE CEPA for many items.',
   },
 
   canada: {
@@ -194,7 +189,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: 'CA$',
     region: 'North America',
     headline: 'Import Indian Handicrafts Wholesale to Canada',
-    subheadline: 'Handmade wooden artifacts, brass figurines & coconut products shipped to Canada in 5–7 days.',
+    subheadline: 'Handmade wooden artifacts, brass figurines shipped to Canada in 5–7 days.',
     airFreightDays: '5–7 business days',
     seaFreightDays: '22–28 days (Vancouver) / 25–30 days (Toronto)',
     carriers: ['DHL', 'FedEx', 'UPS'],
@@ -202,13 +197,12 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Canada uses the Customs Tariff based on HS codes. Wooden handicrafts (HS 4420): 0–7%. Brass items (HS 8306): typically 0%. Wood products may qualify for GPT (General Preferential Tariff) or LDCT rates. Business Number (BN) with import/export account required.',
     vatGst: '5% federal GST + provincial PST or HST on imports — fully recoverable for GST/HST-registered businesses.',
     customsTip: 'Canada Border Services Agency (CBSA) handles customs. HS code and accurate description mandatory. PARS (Pre-Arrival Review System) recommended for faster clearance. A Canadian customs broker speeds up the process significantly.',
-    popularProducts: ['Wooden home accessories', 'Brass decorative items', 'Eco-friendly handicraft gifts', 'Coconut shell products', 'Artisan wooden toys', 'Fair trade handicrafts Canada'],
+    popularProducts: ['Wooden home accessories', 'Brass decorative items', 'Eco-friendly handicraft gifts', 'Artisan wooden toys', 'Fair trade handicrafts Canada'],
     testimonial: null,
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Canada?', a: 'Duties vary by HS code. Wooden handicrafts (HS 4420): 0–7%. Brass articles (HS 8306): typically 0%. India qualifies for Canada\'s GPT (General Preferential Tariff) which reduces duties on many categories. We include the correct HS code on all commercial invoices.' },
       { q: 'Do I need a Canadian Business Number to import?', a: 'Yes. To import goods commercially into Canada, you need a Canadian Business Number (BN) with an import/export account registered with the CRA. Apply at the Canada Revenue Agency. Your customs broker can often handle this on your behalf.' },
-      { q: 'Can you ship to Amazon FBA Canada warehouses?', a: 'Yes. We ship to Amazon FBA fulfilment centres across Canada (Ontario, BC, Alberta). We follow Amazon\'s FBA packaging and labeling requirements. Share your shipment plan and we prepare the goods accordingly.' },
-    ],
+      { q: 'Can you ship to Amazon FBA Canada warehouses?', a: 'Yes. We ship to Amazon FBA fulfilment centres across Canada (Ontario, BC, Alberta). We follow Amazon\'s FBA packaging and labeling requirements. Share your shipment plan and we prepare the goods accordingly.' }],
     keywords: ['import handicrafts india canada', 'indian handicraft wholesale canada', 'wooden decor wholesale canada', 'buy handmade indian products canada', 'handicraft supplier canada'],
     metaTitle: 'Indian Handicrafts Wholesale for Canada — Import from India | Vidhiraj Global Impex',
     metaDescription: 'Import wholesale handcrafted Indian handicrafts to Canada. Wooden artifacts, brass figurines & eco-friendly products. DHL delivery in 5–7 days. Factory-direct pricing.',
@@ -240,8 +234,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: "Quels droits de douane s'appliquent aux importations d'artisanat indien en France?", a: "Dans le cadre du SPG de l'UE, l'Inde bénéficie de taux réduits ou nuls. Objets en bois sculptés (HS 4420): 0–2,7%. Articles en laiton (HS 8306): 0%. La TVA à l'import est de 20% mais est entièrement récupérable pour les entreprises TVA. Nous fournissons le certificat d'origine Form A." },
       { q: 'Pouvez-vous livrer directement à notre boutique en France?', a: "Oui. Nous livrons via DHL ou FedEx directement à votre boutique, entrepôt ou centre Amazon FBA en France. Le suivi en temps réel est fourni dès l'expédition. Délai de livraison: 4–6 jours ouvrés après expédition." },
-      { q: 'Proposez-vous des collections exclusives pour la France?', a: "Oui. Nous développons des collections exclusives pour nos clients français — couleurs, finitions et designs adaptés aux préférences du marché européen. Design personnalisé disponible sans frais supplémentaires pour les commandes dépassant le MOQ." },
-    ],
+      { q: 'Proposez-vous des collections exclusives pour la France?', a: "Oui. Nous développons des collections exclusives pour nos clients français — couleurs, finitions et designs adaptés aux préférences du marché européen. Design personnalisé disponible sans frais supplémentaires pour les commandes dépassant le MOQ." }],
     keywords: ['artisanat indien grossiste france', 'importer artisanat inde france', 'objets decoratifs indiens gros france', 'figurines laiton gros france', 'cadeaux artisanaux indien france'],
     metaTitle: "Artisanat Indien en Gros pour la France — Import d'Inde | Vidhiraj Global Impex",
     metaDescription: "Importez de l'artisanat indien en gros en France. Objets en bois, figurines en laiton & produits en noix de coco. Livraison DHL en 4–6 jours. Prix fabricant direct.",
@@ -264,16 +257,15 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'EU GSP preferential rates apply. Rotterdam (Port of Rotterdam) is Europe\'s largest port — sea freight from India to Netherlands is cost-efficient. EORI number required. BTW (VAT) of 21% on imports, reclaimable for Dutch businesses.',
     vatGst: '21% Dutch BTW (VAT) on imports — fully reclaimable as input tax for BTW-registered companies.',
     customsTip: 'The Netherlands (via Rotterdam and Schiphol) is Europe\'s prime import hub. Many EU importers use NL as their entry point. ICS2 (Import Control System 2) filing required before departure. Dutch Customs (Douane) is highly efficient for EU-standard commercial imports.',
-    popularProducts: ['Wooden decor Netherlands', 'Brass home accessories', 'Sustainable handicrafts EU', 'Coconut shell tableware', 'Handmade gift items', 'Fair trade Indian crafts'],
+    popularProducts: ['Wooden decor Netherlands', 'Brass home accessories', 'Sustainable handicrafts EU', 'Handmade gift items', 'Fair trade Indian crafts'],
     testimonial: null,
     faqs: [
       { q: 'Can I use the Netherlands as an entry point to distribute across the EU?', a: 'Yes. Many EU buyers import through Rotterdam or Schiphol (Amsterdam) into the Netherlands and then distribute to Germany, Belgium, France and beyond within the EU single market — no additional customs required. This is a highly efficient import strategy for EU-wide distribution.' },
       { q: 'What are Dutch import duties on Indian handicrafts?', a: 'EU GSP rates apply: wooden handicrafts (HS 4420) 0–2.7%, brass articles 0%. Import VAT (BTW) of 21% is charged but fully reclaimable by Dutch BTW-registered businesses. A GSP Form A certificate from us enables preferential rates.' },
-      { q: 'Do you ship to Amsterdam or Rotterdam warehouses?', a: 'Yes. We ship directly to Rotterdam port (sea freight LCL/FCL) or Amsterdam Schiphol area warehouses by air. We coordinate with Netherlands-based freight forwarders on request.' },
-    ],
+      { q: 'Do you ship to Amsterdam or Rotterdam warehouses?', a: 'Yes. We ship directly to Rotterdam port (sea freight LCL/FCL) or Amsterdam Schiphol area warehouses by air. We coordinate with Netherlands-based freight forwarders on request.' }],
     keywords: ['indian handicraft wholesale netherlands', 'import handicrafts india netherlands', 'rotterdam india handicraft import', 'wooden decor wholesale netherlands', 'india handicraft supplier europe'],
     metaTitle: 'Indian Handicraft Wholesale for Netherlands — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to the Netherlands via Rotterdam. Wooden artifacts, brass figurines & coconut products. EU GSP 0% duty. Ships in 4–6 days by air.',
+    metaDescription: 'Import wholesale Indian handicrafts to the Netherlands via Rotterdam. Wooden artifacts, brass figurines. EU GSP 0% duty. Ships in 4–6 days by air.',
   },
 
   japan: {
@@ -285,7 +277,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: '¥',
     region: 'Asia Pacific',
     headline: 'インド手工芸品の日本向け卸売サプライヤー',
-    subheadline: 'Premium handcrafted Indian wooden artifacts, brass figurines & coconut products — delivered to Japan in 4–5 days.',
+    subheadline: 'Premium handcrafted Indian wooden artifacts, brass figurines — delivered to Japan in 4–5 days.',
     airFreightDays: '4–5 business days',
     seaFreightDays: '15–20 days',
     carriers: ['DHL', 'FedEx', 'Yamato International'],
@@ -293,16 +285,15 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Japan imposes low duties on handicrafts. Wooden articles (HS 4420): 0–3.9%. Brass items (HS 8306): 0%. Japan has an EPA (Economic Partnership Agreement) with several countries — India-Japan CEPA may provide preferential rates. Consumption Tax (JCT) of 10% on imports.',
     vatGst: '10% Japanese Consumption Tax (JCT) on imports — applicable for commercial importers. Recoverable for registered businesses.',
     customsTip: 'Japan Customs (税関) is thorough but efficient for compliant shipments. Accurate description of materials (wood species, brass composition) on invoices is important. Quarantine inspection may apply to wooden products. Use a Japanese customs broker (通関士) for smooth clearance.',
-    popularProducts: ['Handcrafted wooden decor Japan', 'Indian brass figurines Japan', 'Eco-friendly Asian gifts', 'Coconut shell bowls Japan', 'Artisan home accessories', 'Traditional Indian craft gifts'],
+    popularProducts: ['Handcrafted wooden decor Japan', 'Indian brass figurines Japan', 'Eco-friendly Asian gifts', 'Artisan home accessories', 'Traditional Indian craft gifts'],
     testimonial: null,
     faqs: [
       { q: 'Are there any special inspection requirements for wooden handicrafts entering Japan?', a: 'Yes. Japan has plant quarantine requirements for wooden products. Our wood products are kiln-dried and treated to meet Japanese phytosanitary standards. We provide the required phytosanitary certificate from the Indian Plant Quarantine authority for each shipment.' },
       { q: 'What are the import duties on Indian handicrafts in Japan?', a: 'Japan\'s import duties on handicrafts are generally low: 0–3.9% for wooden articles, 0% for brass items. Consumption Tax of 10% applies. The India–Japan CEPA may provide preferential rates for some categories. We provide HS codes to confirm exact duty rates.' },
-      { q: 'Can you provide Japanese-language product descriptions for our e-commerce store?', a: 'We can provide detailed product descriptions in English which can be translated. We also provide complete product specifications, materials, and origin information required for Japanese e-commerce platforms (Rakuten, Yahoo Shopping, Amazon Japan).' },
-    ],
+      { q: 'Can you provide Japanese-language product descriptions for our e-commerce store?', a: 'We can provide detailed product descriptions in English which can be translated. We also provide complete product specifications, materials, and origin information required for Japanese e-commerce platforms (Rakuten, Yahoo Shopping, Amazon Japan).' }],
     keywords: ['india handicraft wholesale japan', 'indian wooden decor japan wholesale', 'brass figurines import japan', 'handmade indian products japan', 'eco friendly handicrafts japan'],
     metaTitle: 'Indian Handicraft Wholesale Supplier Japan — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale handcrafted Indian handicrafts to Japan. Wooden artifacts, brass figurines & coconut products. Ships in 4–5 days. Phytosanitary certificates provided.',
+    metaDescription: 'Import wholesale handcrafted Indian handicrafts to Japan. Wooden artifacts, brass figurines. Ships in 4–5 days. Phytosanitary certificates provided.',
   },
 
   singapore: {
@@ -322,7 +313,7 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Singapore is a free trade hub with 0% import duty on most goods including handicrafts. GST of 9% (as of 2024) applies on imports above S$400. India–Singapore CECA provides additional trade facilitation.',
     vatGst: '9% Singapore GST on commercial imports over S$400 — claimable by GST-registered businesses.',
     customsTip: 'Singapore Customs is highly efficient. TradeNet system for electronic permit applications. Goods & Services Tax (GST) registration recommended for businesses importing regularly. Singapore is also an excellent regional hub for onward distribution to Malaysia, Indonesia, Thailand.',
-    popularProducts: ['Indian home decor Singapore', 'Brass decorative items SG', 'Coconut shell products Asia', 'Handcrafted wooden gifts', 'Luxury Indian handicrafts', 'Corporate gifts wholesale Singapore'],
+    popularProducts: ['Indian home decor Singapore', 'Brass decorative items SG', 'Handcrafted wooden gifts', 'Luxury Indian handicrafts', 'Corporate gifts wholesale Singapore'],
     testimonial: {
       name: 'David Tan',
       company: 'Orient Crafts Pte Ltd, Singapore',
@@ -331,11 +322,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'Are there import duties on Indian handicrafts in Singapore?', a: 'Singapore levies 0% import duty on virtually all goods including handicrafts — it is one of the world\'s most open trading economies. A 9% GST (as of 2024) applies on imports above S$400, which is claimable by GST-registered Singapore businesses.' },
       { q: 'Can Singapore be used as a distribution hub for Southeast Asia?', a: 'Yes. Many buyers import into Singapore and then re-export to Malaysia, Indonesia, Thailand, Philippines, and Vietnam — benefiting from Singapore\'s excellent logistics infrastructure, free trade agreements, and efficient customs. We can help plan multi-country distribution strategies.' },
-      { q: 'How fast can you deliver handicrafts from India to Singapore?', a: 'Air freight via DHL or FedEx takes just 3–4 business days from our Chandigarh facility to Singapore Changi. Sea freight to PSA Singapore takes 12–15 days. We dispatch within 1 business day of clearance for stock orders.' },
-    ],
+      { q: 'How fast can you deliver handicrafts from India to Singapore?', a: 'Air freight via DHL or FedEx takes just 3–4 business days from our Chandigarh facility to Singapore Changi. Sea freight to PSA Singapore takes 12–15 days. We dispatch within 1 business day of clearance for stock orders.' }],
     keywords: ['indian handicraft wholesale singapore', 'import handicrafts india singapore', 'wooden decor wholesale singapore', 'brass figurines singapore wholesale', 'handicraft supplier southeast asia'],
     metaTitle: 'Indian Handicraft Wholesale for Singapore — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Singapore in 3–4 days. 0% import duty. Wooden artifacts, brass figurines & coconut products. Hub for Southeast Asian distribution.',
+    metaDescription: 'Import wholesale Indian handicrafts to Singapore in 3–4 days. 0% import duty. Wooden artifacts, brass figurines. Hub for Southeast Asian distribution.',
   },
 
   italy: {
@@ -364,8 +354,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'Quali dazi doganali si applicano all\'importazione di artigianato indiano in Italia?', a: 'Nell\'ambito del SPG dell\'UE, l\'India beneficia di aliquote ridotte. Oggetti in legno scolpito (HS 4420): 0–2,7%. Articoli in ottone (HS 8306): 0%. L\'IVA all\'importazione è del 22%, completamente detraibile per le aziende con Partita IVA. Forniamo il certificato di origine Form A.' },
       { q: 'Potete spedire direttamente ai nostri punti vendita in Italia?', a: 'Sì. Spediamo tramite DHL o FedEx direttamente a negozi, magazzini o centri Amazon FBA in Italia. Il tracking è fornito immediatamente dopo la spedizione. Tempi: 4–6 giorni lavorativi via aerea.' },
-      { q: 'Fornite campioni prima dell\'ordine all\'ingrosso?', a: 'Sì. Inviamo campioni di prodotti a tariffe preferenziali per i potenziali acquirenti all\'ingrosso. I costi dei campioni vengono detratti dal primo ordine all\'ingrosso. Risposta entro 24 ore alla vostra richiesta di campioni.' },
-    ],
+      { q: 'Fornite campioni prima dell\'ordine all\'ingrosso?', a: 'Sì. Inviamo campioni di prodotti a tariffe preferenziali per i potenziali acquirenti all\'ingrosso. I costi dei campioni vengono detratti dal primo ordine all\'ingrosso. Risposta entro 24 ore alla vostra richiesta di campioni.' }],
     keywords: ['artigianato indiano all\'ingrosso italia', 'importare artigianato dall\'india in italia', 'figurine ottone ingrosso italia', 'decor etnico indiano italia', 'fornitore artigianato indiano italia'],
     metaTitle: 'Artigianato Indiano all\'Ingrosso per l\'Italia — Import dall\'India | Vidhiraj Global Impex',
     metaDescription: 'Importate artigianato indiano all\'ingrosso in Italia. Manufatti in legno, figurine in ottone & prodotti in cocco. Dazi 0% sotto EU GSP. Consegna DHL in 4–6 giorni.',
@@ -397,8 +386,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: '¿Qué aranceles de importación se aplican a la artesanía india en España?', a: 'Bajo el SPG de la UE, India se beneficia de tipos reducidos. Artículos de madera tallada (HS 4420): 0–2,7%. Artículos de latón (HS 8306): 0%. El IVA de importación es del 21%, completamente deducible para empresas con IVA. Proporcionamos el certificado de origen Form A.' },
       { q: '¿Podéis enviar directamente a nuestra tienda en España?', a: 'Sí. Enviamos vía DHL o FedEx directamente a tiendas, almacenes o centros de Amazon FBA en España. El seguimiento se proporciona inmediatamente tras el envío. Plazo: 4–6 días hábiles vía aérea.' },
-      { q: '¿Ofrecéis etiquetado personalizado y packaging de marca propia?', a: 'Sí. Ofrecemos fabricación OEM con vuestro logo, packaging personalizado y diseños exclusivos. Sin cargo adicional por diseño para pedidos que superen el MOQ. Ideal para marcas españolas de decoración y regalo.' },
-    ],
+      { q: '¿Ofrecéis etiquetado personalizado y packaging de marca propia?', a: 'Sí. Ofrecemos fabricación OEM con vuestro logo, packaging personalizado y diseños exclusivos. Sin cargo adicional por diseño para pedidos que superen el MOQ. Ideal para marcas españolas de decoración y regalo.' }],
     keywords: ['artesanía india al por mayor españa', 'importar artesanía de india a españa', 'figuras latón mayorista españa', 'proveedor artesanía india españa', 'decor étnico indio españa'],
     metaTitle: 'Artesanía India al Por Mayor para España — Importar de India | Vidhiraj Global Impex',
     metaDescription: 'Importad artesanía india al por mayor en España. Artículos de madera, figuras de latón & productos de coco. Aranceles 0% bajo EU GSP. Entrega DHL en 4–6 días.',
@@ -413,7 +401,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: '₩',
     region: 'Asia Pacific',
     headline: '인도 수공예품 한국 도매 공급업체',
-    subheadline: 'Premium handcrafted wooden artifacts, brass figurines & coconut handicrafts — delivered to South Korea in 4–5 days.',
+    subheadline: 'Premium handcrafted wooden artifacts, brass figurines — delivered to South Korea in 4–5 days.',
     airFreightDays: '4–5 business days',
     seaFreightDays: '14–18 days',
     carriers: ['DHL', 'FedEx', 'CJ Logistics', 'Aramex'],
@@ -426,11 +414,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in South Korea?', a: 'Under the India–Korea CEPA (2010), many Indian handicraft categories benefit from 0% or reduced duty rates. Without CEPA, wooden handicrafts (HS 4420) attract 0–8%. Brass items are typically 0–4%. Korean VAT of 10% applies but is reclaimable. We provide CEPA Certificate of Origin.' },
       { q: 'How long does shipping from India to South Korea take?', a: 'Air freight via DHL or FedEx delivers to Seoul (Incheon) in 4–5 business days from our Chandigarh facility. Sea freight to Busan Port takes 14–18 days. We recommend air freight for initial sample orders and sea freight for large volume orders.' },
-      { q: 'Can you provide product descriptions in Korean for our Naver Smart Store or Coupang?', a: 'We provide detailed product specifications, materials, dimensions, and origin in English. We can also supply product photos with white backgrounds optimized for Korean e-commerce platforms. Translation to Korean can be done with our provided specifications.' },
-    ],
+      { q: 'Can you provide product descriptions in Korean for our Naver Smart Store or Coupang?', a: 'We provide detailed product specifications, materials, dimensions, and origin in English. We can also supply product photos with white backgrounds optimized for Korean e-commerce platforms. Translation to Korean can be done with our provided specifications.' }],
     keywords: ['인도 수공예품 한국 도매', 'india handicraft wholesale south korea', 'wooden decor wholesale korea', 'brass figurines import korea', 'handmade indian gifts korea'],
     metaTitle: 'Indian Handicraft Wholesale for South Korea — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale handcrafted Indian handicrafts to South Korea. Wooden artifacts, brass figurines & coconut products. Reduced duty under India–Korea CEPA. Delivers in 4–5 days.',
+    metaDescription: 'Import wholesale handcrafted Indian handicrafts to South Korea. Wooden artifacts, brass figurines. Reduced duty under India–Korea CEPA. Delivers in 4–5 days.',
   },
 
   brazil: {
@@ -455,8 +442,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What are the import taxes on Indian handicrafts in Brazil?', a: 'Brazil\'s import tax structure is complex: Import Duty (II) of 12–20%, IPI, ICMS (17–25%), PIS (1.65%), and COFINS (7.6%). Total tax burden can reach 60–80% of CIF value depending on HS code and state. We recommend consulting a Brazilian Despachante Aduaneiro for accurate cost calculation before your order.' },
       { q: 'How long does customs clearance take in Brazil?', a: 'Brazilian customs (Receita Federal) can take 15–30 days. Having a licensed customs broker (Despachante Aduaneiro) and complete, accurate documentation significantly speeds clearance. We provide all required export documents: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin, and phytosanitary certificates for wood products.' },
-      { q: 'Do you have experience shipping to Brazil?', a: 'Yes. We ship to major Brazilian cities including São Paulo, Rio de Janeiro, Belo Horizonte, and Brasília. We are familiar with Brazil\'s documentation requirements and provide all export documents needed for Brazilian customs. We recommend DHL Express for air freight to Brazil for reliability.' },
-    ],
+      { q: 'Do you have experience shipping to Brazil?', a: 'Yes. We ship to major Brazilian cities including São Paulo, Rio de Janeiro, Belo Horizonte, and Brasília. We are familiar with Brazil\'s documentation requirements and provide all export documents needed for Brazilian customs. We recommend DHL Express for air freight to Brazil for reliability.' }],
     keywords: ['artesanato indiano atacado brasil', 'importar artesanato da índia para o brasil', 'fornecedor artesanato indiano brasil', 'decor étnico indiano brasil', 'figuras bronze indiano brasil'],
     metaTitle: 'Artesanato Indiano Atacado para o Brasil — Importar da Índia | Vidhiraj Global Impex',
     metaDescription: 'Importe artesanato indiano no atacado para o Brasil. Artefatos de madeira, figuras de bronze & produtos de coco. Toda a documentação de exportação fornecida. Entrega DHL em 6–10 dias.',
@@ -484,8 +470,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Mexico?', a: 'Mexico applies MFN (Most Favored Nation) tariff rates to Indian goods as there is no India–Mexico FTA. Wooden handicrafts (HS 4420): approximately 10–15%. Brass items (HS 8306): approximately 15–20%. Mexican IVA of 16% applies and is recoverable. Consult a Mexican Agente Aduanal for exact rates.' },
       { q: 'Is a customs agent (Agente Aduanal) required to import into Mexico?', a: 'Yes. Mexican law requires a licensed Agente Aduanal (customs broker) for all commercial imports. They file the Pedimento (customs declaration) and manage all SAT/Aduanas requirements. We can recommend freight forwarders with established Mexican partners.' },
-      { q: 'Can you ship to my warehouse in Monterrey, Guadalajara or Mexico City?', a: 'Yes. We ship via DHL or FedEx to any location in Mexico. Delivery takes 4–6 business days by air from our Chandigarh facility. We provide full tracking and all necessary export documentation for Mexican customs clearance.' },
-    ],
+      { q: 'Can you ship to my warehouse in Monterrey, Guadalajara or Mexico City?', a: 'Yes. We ship via DHL or FedEx to any location in Mexico. Delivery takes 4–6 business days by air from our Chandigarh facility. We provide full tracking and all necessary export documentation for Mexican customs clearance.' }],
     keywords: ['artesanía india al mayoreo México', 'importar artesanía de India a México', 'figuras latón mayoreo México', 'proveedor artesanía india México', 'decor étnico indio México'],
     metaTitle: 'Artesanía India al Mayoreo para México — Importar de India | Vidhiraj Global Impex',
     metaDescription: 'Importad artesanía india al mayoreo en México. Artículos de madera, figuras de latón & productos de coco. Entrega DHL en 4–6 días. Precios de fábrica directa.',
@@ -500,7 +485,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: 'SAR',
     region: 'Middle East',
     headline: 'Indian Handicraft Wholesale Supplier for Saudi Arabia',
-    subheadline: 'Handcrafted wooden artifacts, brass décor & coconut products — delivered to Saudi Arabia in 3–5 days.',
+    subheadline: 'Handcrafted wooden artifacts, brass décor — delivered to Saudi Arabia in 3–5 days.',
     airFreightDays: '3–5 business days',
     seaFreightDays: '12–16 days (via Jeddah / Dammam)',
     carriers: ['DHL', 'Aramex', 'FedEx', 'Saudi Post'],
@@ -508,7 +493,7 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Saudi Arabia applies GCC Unified Customs Law — standard 5% duty on most goods. Some decorative/luxury items may attract 15%. India–Saudi Arabia trade benefits from strategic bilateral agreements. ZATCA (Zakat, Tax and Customs Authority) handles customs. VAT of 15% on imports.',
     vatGst: '15% Saudi VAT (Value Added Tax) on imports — claimable by VAT-registered Saudi businesses.',
     customsTip: 'Saudi customs (ZATCA) requires accurate HS code classification and compliant commercial invoices. Arabic description on invoices is helpful. Jeddah Islamic Port (sea) and King Khalid International Airport Riyadh / King Abdulaziz Airport Jeddah (air). Aramex has excellent India–Saudi routes.',
-    popularProducts: ['Brass decor for Saudi homes', 'Wooden Islamic-inspired artifacts', 'Luxury gift hampers Saudi Arabia', 'Coconut shell home accessories', 'Hotel & hospitality décor', 'Premium Indian handicraft sets'],
+    popularProducts: ['Brass decor for Saudi homes', 'Wooden Islamic-inspired artifacts', 'Luxury gift hampers Saudi Arabia', 'Hotel & hospitality décor', 'Premium Indian handicraft sets'],
     testimonial: {
       name: 'Abdullah Al-Ghamdi',
       company: 'Riyadh Gifts Trading, Saudi Arabia',
@@ -517,11 +502,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Saudi Arabia?', a: 'Saudi Arabia applies GCC Unified Customs Law: standard 5% customs duty on most goods. Decorative and luxury items may attract up to 15%. VAT of 15% applies on all imports. India–Saudi bilateral trade agreements provide some facilitations. We provide complete documentation for smooth ZATCA customs clearance.' },
       { q: 'How quickly can you ship from India to Riyadh or Jeddah?', a: 'Air freight via Aramex or DHL delivers to Riyadh or Jeddah in 3–5 business days. Sea freight to Jeddah Islamic Port or Dammam Port takes 12–16 days. We offer same-day dispatch Monday–Saturday for urgent orders.' },
-      { q: 'Can you supply handicrafts for Saudi hotels, government gifting, or corporate events?', a: 'Yes. We supply premium Indian handicrafts for hotels, corporate gifting, government events, and Hajj/Umrah season souvenirs in Saudi Arabia. Custom branding, luxury packaging, and large-volume supply available. Minimum orders flexible for corporate clients.' },
-    ],
+      { q: 'Can you supply handicrafts for Saudi hotels, government gifting, or corporate events?', a: 'Yes. We supply premium Indian handicrafts for hotels, corporate gifting, government events, and Hajj/Umrah season souvenirs in Saudi Arabia. Custom branding, luxury packaging, and large-volume supply available. Minimum orders flexible for corporate clients.' }],
     keywords: ['indian handicraft wholesale saudi arabia', 'import handicrafts india saudi arabia', 'wooden decor wholesale riyadh', 'brass figurines saudi arabia wholesale', 'india handicraft supplier ksa'],
     metaTitle: 'Indian Handicraft Wholesale for Saudi Arabia — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Saudi Arabia in 3–5 days. Wooden artifacts, brass décor & coconut products. Trusted supplier for KSA hotels & retailers. Aramex & DHL shipping.',
+    metaDescription: 'Import wholesale Indian handicrafts to Saudi Arabia in 3–5 days. Wooden artifacts, brass décor. Trusted supplier for KSA hotels & retailers. Aramex & DHL shipping.',
   },
 
   southafrica: {
@@ -533,7 +517,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: 'R',
     region: 'Africa',
     headline: 'Indian Handicraft Wholesale Supplier for South Africa',
-    subheadline: 'Quality handmade wooden artifacts, brass figurines & coconut products — delivered to South Africa in 5–8 days.',
+    subheadline: 'Quality handmade wooden artifacts, brass figurines — delivered to South Africa in 5–8 days.',
     airFreightDays: '5–8 business days',
     seaFreightDays: '20–26 days (via Cape Town / Durban)',
     carriers: ['DHL', 'FedEx', 'Aramex'],
@@ -541,16 +525,15 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'South Africa applies SACU (Southern African Customs Union) tariff. India has SACU-India PTA under negotiation. Wooden handicrafts (HS 4420): typically 0–10%. Brass items (HS 8306): 0–15%. VAT of 15% on imports, reclaimable for VAT-registered businesses. SARS (South African Revenue Service) manages customs.',
     vatGst: '15% South African VAT on imports — claimable by VAT-registered businesses with SARS.',
     customsTip: 'SARS Customs manages imports through Cape Town, Durban, and Johannesburg O.R. Tambo airport. A customs broker is strongly recommended. Durban Port is South Africa\'s busiest for sea freight from India. Accurate HS code and country of origin documentation critical.',
-    popularProducts: ['Indian wooden home decor SA', 'Brass decorative figurines South Africa', 'Eco-friendly Indian crafts', 'Coconut shell products Africa', 'Bohemian Indian decor', 'Handmade gift sets South Africa'],
+    popularProducts: ['Indian wooden home decor SA', 'Brass decorative figurines South Africa', 'Eco-friendly Indian crafts', 'Bohemian Indian decor', 'Handmade gift sets South Africa'],
     testimonial: null,
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in South Africa?', a: 'South Africa (SACU) applies tariff rates of 0–20% depending on HS code. Wooden handicrafts (HS 4420): typically 0–10%. Brass items (HS 8306): 0–15%. VAT of 15% applies on imports but is recoverable for VAT-registered South African businesses. We provide all documentation for SARS customs clearance.' },
       { q: 'How does shipping from India to South Africa work?', a: 'Air freight via DHL or FedEx delivers to Johannesburg, Cape Town, or Durban in 5–8 business days. Sea freight to Durban or Cape Town takes 20–26 days. We coordinate with freight forwarders for sea freight. Air is recommended for initial orders; sea for larger volume shipments.' },
-      { q: 'Can you supply handicrafts for South African retailers or online stores?', a: 'Yes. We supply wholesale Indian handicrafts to South African retail chains, boutiques, gift shops, and online sellers. We provide retail-ready packaging, barcodes on request, and complete product documentation for South African retail compliance.' },
-    ],
+      { q: 'Can you supply handicrafts for South African retailers or online stores?', a: 'Yes. We supply wholesale Indian handicrafts to South African retail chains, boutiques, gift shops, and online sellers. We provide retail-ready packaging, barcodes on request, and complete product documentation for South African retail compliance.' }],
     keywords: ['indian handicraft wholesale south africa', 'import handicrafts india south africa', 'wooden decor wholesale south africa', 'brass figurines south africa', 'india handicraft supplier africa'],
     metaTitle: 'Indian Handicraft Wholesale for South Africa — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to South Africa. Wooden artifacts, brass figurines & coconut products. Ships in 5–8 days via DHL/FedEx. Factory-direct pricing.',
+    metaDescription: 'Import wholesale Indian handicrafts to South Africa. Wooden artifacts, brass figurines. Ships in 5–8 days via DHL/FedEx. Factory-direct pricing.',
   },
 
   russia: {
@@ -575,8 +558,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Russia?', a: 'Russia applies EAEU unified customs tariff: wooden handicrafts (HS 4420) typically 10–15%, brass items (HS 8306) 10–20%. Import VAT (НДС) of 20% also applies. An electronic customs declaration via Russia\'s FCS system is mandatory. We provide all required export documents for Russian customs clearance.' },
       { q: 'How can I ship handicrafts from India to Russia?', a: 'Air freight via Aramex, FedEx (where available) or EMS takes 6–10 business days to Moscow. Sea freight via St. Petersburg or Novorossiysk takes 35–45 days. We recommend air freight for regular smaller orders. Use a freight forwarder experienced in India–Russia corridors.' },
-      { q: 'Do you have experience with India–Russia trade documentation?', a: 'Yes. We provide all mandatory export documents: Commercial Invoice, Packing List, Certificate of Origin (Form A), Phytosanitary Certificate for wood products, and Bill of Lading or AWB. We are familiar with Russian customs requirements and can adjust documentation format as required.' },
-    ],
+      { q: 'Do you have experience with India–Russia trade documentation?', a: 'Yes. We provide all mandatory export documents: Commercial Invoice, Packing List, Certificate of Origin (Form A), Phytosanitary Certificate for wood products, and Bill of Lading or AWB. We are familiar with Russian customs requirements and can adjust documentation format as required.' }],
     keywords: ['индийские изделия ручной работы оптом россия', 'импорт ремёсел из индии в россию', 'оптовые поставки сувениров из индии', 'india handicraft wholesale russia', 'wooden decor wholesale russia'],
     metaTitle: 'Индийские Предметы Ручной Работы Оптом для России — Vidhiraj Global Impex',
     metaDescription: 'Импортируйте индийские изделия ручной работы оптом в Россию. Деревянные изделия, латунные статуэтки & продукты из кокоса. Доставка за 6–10 дней. Цены от производителя.',
@@ -599,7 +581,7 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Sweden is an EU member — EU GSP preferential rates apply for Indian goods. Wooden handicrafts (HS 4420): 0–2.7%. Brass items (HS 8306): 0%. GSP Form A certificate required. Swedish Customs (Tullverket) manages imports. EORI number required for commercial importers.',
     vatGst: '25% Swedish MOMS (VAT) on imports — fully deductible for MOMS-registered Swedish businesses.',
     customsTip: 'Swedish Customs (Tullverket) uses EU ICS2 import control. EORI number mandatory. Stockholm Arlanda airport for air cargo; Gothenburg Port (Göteborgs hamn) for sea freight — Sweden\'s main gateway from Asia. Eco-friendly packaging appreciated in Swedish market.',
-    popularProducts: ['Eco-friendly Indian wooden decor', 'Sustainable handicrafts Sweden', 'Brass home accessories Scandinavia', 'Handmade coconut products', 'Natural Indian crafts', 'Minimalist Indian wooden art'],
+    popularProducts: ['Eco-friendly Indian wooden decor', 'Sustainable handicrafts Sweden', 'Brass home accessories Scandinavia', 'Natural Indian crafts', 'Minimalist Indian wooden art'],
     testimonial: {
       name: 'Linnea Eriksson',
       company: 'Nordisk Hantverk AB, Gothenburg',
@@ -608,8 +590,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What are the import duties on Indian handicrafts in Sweden?', a: 'Sweden applies EU GSP rates: wooden handicrafts (HS 4420) 0–2.7%, brass items (HS 8306) 0%. Swedish MOMS (VAT) of 25% applies on imports but is fully deductible for MOMS-registered businesses. EORI number required. We provide GSP Form A certificate.' },
       { q: 'Do your products meet Scandinavian sustainability requirements?', a: 'Yes. Our wooden products use sustainably sourced wood from certified forests. We offer FSC-certified documentation on request. Our eco-friendly product range — including coconut shell and recycled material items — is particularly popular in the Swedish and Scandinavian markets.' },
-      { q: 'Can you ship to Stockholm, Gothenburg, or Malmö?', a: 'Yes. We ship via DHL or FedEx to any Swedish address. Delivery takes 4–6 business days by air. Gothenburg is Sweden\'s main sea freight port for Asian imports. We coordinate LCL sea freight for large orders.' },
-    ],
+      { q: 'Can you ship to Stockholm, Gothenburg, or Malmö?', a: 'Yes. We ship via DHL or FedEx to any Swedish address. Delivery takes 4–6 business days by air. Gothenburg is Sweden\'s main sea freight port for Asian imports. We coordinate LCL sea freight for large orders.' }],
     keywords: ['indian handicraft wholesale sweden', 'eco handicrafts import sweden', 'wooden decor wholesale scandinavia', 'sustainable indian crafts sweden', 'brass figurines sweden wholesale'],
     metaTitle: 'Indian Handicraft Wholesale for Sweden — Import from India | Vidhiraj Global Impex',
     metaDescription: 'Import wholesale eco-friendly Indian handicrafts to Sweden. Wooden artifacts, brass figurines & sustainable products. EU GSP 0% duty. DHL delivery in 4–6 days.',
@@ -641,8 +622,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'Does Switzerland have different customs rules from the EU?', a: 'Yes. Switzerland is not an EU member — it has its own customs territory and tariff. Even goods entering Switzerland from an EU country require a Swiss customs declaration. Swiss VAT (MWST) of 8.1% applies. We ship directly from India to Switzerland via DHL or FedEx, bypassing EU customs.' },
       { q: 'What are import duties on Indian handicrafts in Switzerland?', a: 'Swiss customs tariff: wooden handicrafts (HS 4420) typically 0–3.7%, brass items (HS 8306) 0–2.5%. Swiss VAT (MWST) of 8.1% applies and is recoverable for MWST-registered businesses. No FTA between India and Switzerland — standard rates apply.' },
-      { q: 'Can you supply luxury packaging for the Swiss premium market?', a: 'Yes. We offer premium gift packaging, custom ribbon, branded boxes, and luxury tissue wrapping. Swiss buyers often request premium presentation — we deliver to these standards for corporate gifting, retail, and private label programs.' },
-    ],
+      { q: 'Can you supply luxury packaging for the Swiss premium market?', a: 'Yes. We offer premium gift packaging, custom ribbon, branded boxes, and luxury tissue wrapping. Swiss buyers often request premium presentation — we deliver to these standards for corporate gifting, retail, and private label programs.' }],
     keywords: ['indian handicraft wholesale switzerland', 'import handicrafts india switzerland', 'luxury indian gifts switzerland', 'wooden decor wholesale ch', 'brass figurines switzerland'],
     metaTitle: 'Indian Handicraft Wholesale for Switzerland — Import from India | Vidhiraj Global Impex',
     metaDescription: 'Import premium wholesale Indian handicrafts to Switzerland. Wooden artifacts, brass figurines & luxury products. Ships in 3–5 days via DHL. Factory-direct pricing.',
@@ -665,16 +645,15 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Belgium is an EU member — EU GSP preferential rates apply for India. Wooden handicrafts (HS 4420): 0–2.7%. Brass items (HS 8306): 0%. Antwerp is one of the world\'s busiest container ports — ideal for sea freight from India to Europe. EORI number required. Belgian VAT (BTW/TVA) of 21%.',
     vatGst: '21% Belgian BTW/TVA on imports — fully deductible for VAT-registered Belgian businesses.',
     customsTip: 'Belgium uses EU ATLAS customs system. Antwerp Port (haven van Antwerpen) is Europe\'s second-busiest container port — excellent for sea freight from India. Brussels Airport (BRU) for air cargo. Many EU-wide importers use Belgium as their entry and distribution point for the EU single market.',
-    popularProducts: ['Indian wooden decor Belgium', 'Brass figurines EU wholesale', 'Eco-friendly Indian products', 'Handmade coconut items', 'Artisan craft gifts Belgium', 'Corporate handicraft gifts EU'],
+    popularProducts: ['Indian wooden decor Belgium', 'Brass figurines EU wholesale', 'Eco-friendly Indian products', 'Artisan craft gifts Belgium', 'Corporate handicraft gifts EU'],
     testimonial: null,
     faqs: [
       { q: 'Why use Belgium as an import hub for Indian handicrafts into the EU?', a: 'Antwerp is Europe\'s second-largest container port and one of the most efficient entry points for goods from Asia. Once cleared through Belgian customs, goods can move freely throughout the EU single market without additional customs. This makes Belgium an ideal central hub for EU-wide handicraft distribution.' },
       { q: 'What import duties apply in Belgium for Indian handicrafts?', a: 'EU GSP rates: wooden handicrafts (HS 4420) 0–2.7%, brass items 0%. Belgian VAT (BTW) of 21% applies but is fully reclaimable for BTW-registered businesses. EORI number required. We provide GSP Form A certificate for preferential duty rates.' },
-      { q: 'How fast can you deliver to Brussels or Antwerp?', a: 'Air freight via DHL or FedEx delivers to Brussels or Antwerp in 4–6 business days. Sea freight to Antwerp Port takes 18–22 days from India. We coordinate with Belgian freight forwarders for sea LCL shipments.' },
-    ],
+      { q: 'How fast can you deliver to Brussels or Antwerp?', a: 'Air freight via DHL or FedEx delivers to Brussels or Antwerp in 4–6 business days. Sea freight to Antwerp Port takes 18–22 days from India. We coordinate with Belgian freight forwarders for sea LCL shipments.' }],
     keywords: ['indian handicraft wholesale belgium', 'import handicrafts india belgium antwerp', 'wooden decor wholesale belgium', 'brass figurines belgium eu', 'india handicraft supplier europe belgium'],
     metaTitle: 'Indian Handicraft Wholesale for Belgium — Import via Antwerp | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Belgium via Antwerp — Europe\'s leading port. Wooden artifacts, brass figurines & coconut products. EU GSP 0% duty. DHL in 4–6 days.',
+    metaDescription: 'Import wholesale Indian handicrafts to Belgium via Antwerp — Europe\'s leading port. Wooden artifacts, brass figurines. EU GSP 0% duty. DHL in 4–6 days.',
   },
 
   poland: {
@@ -694,13 +673,12 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Poland is an EU member — EU GSP rates apply for Indian goods. Wooden handicrafts (HS 4420): 0–2.7%. Brass items (HS 8306): 0%. GSP Form A required for preferential rates. Polish VAT (VAT/PTU) of 23% on imports, reclaimable for VAT-registered Polish businesses.',
     vatGst: '23% Polish VAT (PTU) on imports — fully deductible for VAT-registered Polish businesses (NIP number required).',
     customsTip: 'Poland uses EU ATLAS customs. Warsaw Chopin Airport (WAW) for air cargo. Gdańsk Port (Trójmiejski Port) for sea freight — Poland\'s main Baltic Sea port. EORI number mandatory for commercial imports. Poland is a fast-growing e-commerce market — Allegro and Amazon.pl are key platforms.',
-    popularProducts: ['Indian wooden decor Poland', 'Brass decorative figurines Poland', 'Eco-friendly handicrafts EU', 'Handmade coconut products', 'Indian gift sets wholesale', 'Boho decor wholesale Poland'],
+    popularProducts: ['Indian wooden decor Poland', 'Brass decorative figurines Poland', 'Eco-friendly handicrafts EU', 'Indian gift sets wholesale', 'Boho decor wholesale Poland'],
     testimonial: null,
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Poland?', a: 'Poland applies EU GSP rates: wooden handicrafts (HS 4420) 0–2.7%, brass items (HS 8306) 0%. Polish VAT (PTU) of 23% applies on imports but is fully reclaimable for Polish VAT-registered businesses. EORI number required. We provide GSP Form A for preferential duty rates.' },
       { q: 'Can I sell Indian handicrafts on Polish e-commerce platforms like Allegro?', a: 'Yes. Allegro is Poland\'s largest e-commerce platform. We can supply retail-ready Indian handicrafts with Polish-language labels on request, EAN barcodes, and compliant product documentation for Polish retail sales. Amazon.pl is also growing rapidly for handmade and artisan products.' },
-      { q: 'How do I import into Poland from India?', a: 'Air freight via DHL or FedEx delivers to Warsaw in 5–7 business days. Sea freight via Gdańsk takes 22–28 days. An EORI number and Polish customs broker are recommended. We handle all export documentation. Once cleared in Poland, goods move freely within the EU.' },
-    ],
+      { q: 'How do I import into Poland from India?', a: 'Air freight via DHL or FedEx delivers to Warsaw in 5–7 business days. Sea freight via Gdańsk takes 22–28 days. An EORI number and Polish customs broker are recommended. We handle all export documentation. Once cleared in Poland, goods move freely within the EU.' }],
     keywords: ['indian handicraft wholesale poland', 'import handicrafts india poland', 'wooden decor wholesale polska', 'brass figurines poland wholesale', 'india handicraft supplier poland'],
     metaTitle: 'Indian Handicraft Wholesale for Poland — Import from India | Vidhiraj Global Impex',
     metaDescription: 'Import wholesale Indian handicrafts to Poland. Wooden artifacts, brass figurines & eco-friendly products. EU GSP 0% duty. DHL delivery in 5–7 days. Factory-direct pricing.',
@@ -728,11 +706,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Turkey?', a: 'Turkey applies its own tariff rates to Indian goods. Wooden handicrafts (HS 4420): approximately 5–18%. Brass items (HS 8306): 5–10%. Turkish VAT (KDV) of 20% also applies. A Turkish customs broker (gümrük müşaviri) is strongly recommended for efficient clearance. We provide all required export documentation.' },
       { q: 'How quickly can Indian handicrafts be delivered to Istanbul or Ankara?', a: 'Air freight via DHL or FedEx delivers to Istanbul in 4–7 business days from our Chandigarh facility. Sea freight to Istanbul or Mersin takes 15–20 days. Istanbul is an excellent logistics hub for onward distribution to the Caucasus, Central Asia, and surrounding regions.' },
-      { q: 'Do you have experience exporting to Turkey?', a: 'Yes. We regularly export to Turkish importers, retailers, and e-commerce businesses. We provide complete export documentation for Turkish customs including Commercial Invoice (Fatura), Packing List, Bill of Lading, and Certificate of Origin.' },
-    ],
+      { q: 'Do you have experience exporting to Turkey?', a: 'Yes. We regularly export to Turkish importers, retailers, and e-commerce businesses. We provide complete export documentation for Turkish customs including Commercial Invoice (Fatura), Packing List, Bill of Lading, and Certificate of Origin.' }],
     keywords: ['hindistan el sanatları toptan türkiye', 'türkiye el sanatları ithalat hindistan', 'india handicraft wholesale turkey', 'wooden decor turkey wholesale', 'brass figurines turkey import'],
     metaTitle: 'Indian Handicraft Wholesale for Turkey — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Turkey. Wooden artifacts, brass figurines & coconut products. Ships in 4–7 days via DHL. Factory-direct prices from Chandigarh.',
+    metaDescription: 'Import wholesale Indian handicrafts to Turkey. Wooden artifacts, brass figurines. Ships in 4–7 days via DHL. Factory-direct prices from Chandigarh.',
   },
 
   indonesia: {
@@ -757,11 +734,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Indonesia?', a: 'Under ASEAN-India FTA (AIFTA), many Indian handicraft categories enjoy reduced or 0% duty rates in Indonesia. Wooden handicrafts (HS 4420): 0–10%. Brass items (HS 8306): 0–5%. Indonesian PPN (VAT) of 11% applies. Certificate of Origin Form AI is required for AIFTA preferential rates.' },
       { q: 'Do I need a special import licence to import handicrafts in Indonesia?', a: 'Commercial importers in Indonesia require an API (Angka Pengenal Importir) from the Ministry of Trade and an NIB (Nomor Induk Berusaha). A licensed PPJK customs broker is required for customs declaration. We provide all export documents to facilitate smooth Indonesian customs clearance.' },
-      { q: 'Can you ship to Jakarta, Surabaya, or Bali?', a: 'Yes. We ship via DHL or FedEx to any Indonesian city. Air freight delivers to Jakarta in 5–7 business days. Sea freight to Tanjung Priok (Jakarta) or Tanjung Perak (Surabaya) takes 15–20 days. We have experience exporting to Indonesian destinations including Bali\'s growing retail market.' },
-    ],
+      { q: 'Can you ship to Jakarta, Surabaya, or Bali?', a: 'Yes. We ship via DHL or FedEx to any Indonesian city. Air freight delivers to Jakarta in 5–7 business days. Sea freight to Tanjung Priok (Jakarta) or Tanjung Perak (Surabaya) takes 15–20 days. We have experience exporting to Indonesian destinations including Bali\'s growing retail market.' }],
     keywords: ['kerajinan tangan india grosir indonesia', 'impor kerajinan dari india ke indonesia', 'india handicraft wholesale indonesia', 'wooden decor wholesale jakarta', 'brass figurines indonesia import'],
     metaTitle: 'Indian Handicraft Wholesale for Indonesia — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Indonesia. Wooden artifacts, brass figurines & coconut products. AIFTA reduced duties. Ships in 5–7 days to Jakarta & all Indonesia.',
+    metaDescription: 'Import wholesale Indian handicrafts to Indonesia. Wooden artifacts, brass figurines. AIFTA reduced duties. Ships in 5–7 days to Jakarta & all Indonesia.',
   },
 
   malaysia: {
@@ -773,7 +749,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: 'RM',
     region: 'Asia Pacific',
     headline: 'Indian Handicraft Wholesale Supplier for Malaysia',
-    subheadline: 'Handcrafted wooden artifacts, brass figurines & coconut products — delivered to Malaysia in 4–5 days.',
+    subheadline: 'Handcrafted wooden artifacts, brass figurines — delivered to Malaysia in 4–5 days.',
     airFreightDays: '4–5 business days',
     seaFreightDays: '14–18 days (via Port Klang)',
     carriers: ['DHL', 'FedEx', 'Pos Laju', 'Aramex'],
@@ -781,7 +757,7 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Malaysia benefits from ASEAN-India FTA (AIFTA). Wooden handicrafts (HS 4420): 0–5% under AIFTA. Brass items (HS 8306): typically 0%. Malaysian Sales & Service Tax (SST) of 5–10% on certain goods. Certificate of Origin Form AI required for AIFTA rates.',
     vatGst: 'Malaysia applies SST (Sales & Service Tax) — 5% or 10% on applicable goods. Recoverable for SST-registered businesses.',
     customsTip: 'Royal Malaysian Customs (RMCD) manages imports. Kuala Lumpur International Airport (KLIA) for air cargo. Port Klang (Pelabuhan Klang) for sea freight. Customs clearance is generally efficient. Certificate of Origin (Form AI) enables AIFTA preferential duty rates for Indian goods.',
-    popularProducts: ['Indian wooden home decor Malaysia', 'Brass figurines Malaysia wholesale', 'Eco-friendly Indian crafts', 'Coconut products Malaysia', 'Handmade Indian gifts KL', 'Corporate gifts Malaysia India'],
+    popularProducts: ['Indian wooden home decor Malaysia', 'Brass figurines Malaysia wholesale', 'Eco-friendly Indian crafts', 'Handmade Indian gifts KL', 'Corporate gifts Malaysia India'],
     testimonial: {
       name: 'Tan Wei Ming',
       company: 'Heritage Crafts Sdn Bhd, Kuala Lumpur',
@@ -790,11 +766,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Malaysia?', a: 'Under ASEAN-India FTA (AIFTA), Indian handicrafts benefit from reduced duties in Malaysia. Wooden handicrafts (HS 4420): 0–5%. Brass items (HS 8306): typically 0%. Malaysian SST of 5–10% applies on some items. Certificate of Origin Form AI required for AIFTA rates. We provide all documentation.' },
       { q: 'How long does shipping from India to Malaysia take?', a: 'Air freight via DHL or FedEx delivers to Kuala Lumpur in 4–5 business days. Sea freight to Port Klang takes 14–18 days. Malaysia is also an excellent regional hub for distribution to Singapore, Thailand, and Indonesia within ASEAN.' },
-      { q: 'Can you supply Indian handicrafts for Malaysian retail chains or online marketplaces?', a: 'Yes. We supply wholesale Indian handicrafts to Malaysian retailers, Lazada and Shopee sellers, hypermarkets, and gift shop chains. We provide retail-ready packaging, barcodes on request, and complete product documentation for Malaysian retail compliance.' },
-    ],
+      { q: 'Can you supply Indian handicrafts for Malaysian retail chains or online marketplaces?', a: 'Yes. We supply wholesale Indian handicrafts to Malaysian retailers, Lazada and Shopee sellers, hypermarkets, and gift shop chains. We provide retail-ready packaging, barcodes on request, and complete product documentation for Malaysian retail compliance.' }],
     keywords: ['indian handicraft wholesale malaysia', 'import handicrafts india malaysia', 'wooden decor wholesale kuala lumpur', 'brass figurines malaysia wholesale', 'india handicraft supplier malaysia'],
     metaTitle: 'Indian Handicraft Wholesale for Malaysia — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Malaysia. Wooden artifacts, brass figurines & coconut products. AIFTA reduced duties. Air delivery to KL in 4–5 days.',
+    metaDescription: 'Import wholesale Indian handicrafts to Malaysia. Wooden artifacts, brass figurines. AIFTA reduced duties. Air delivery to KL in 4–5 days.',
   },
 
   thailand: {
@@ -814,16 +789,15 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Thailand benefits from ASEAN-India FTA (AIFTA). Wooden handicrafts (HS 4420): 0–10% under AIFTA. Brass items (HS 8306): 0–5%. Thai VAT of 7% on imports. Certificate of Origin Form AI required for AIFTA preferential rates. Thai Customs (กรมศุลกากร) handles imports.',
     vatGst: '7% Thai VAT on imports — recoverable for VAT-registered Thai businesses (PP.30 form).',
     customsTip: 'Thai Customs uses e-Customs electronic declaration system. Bangkok Suvarnabhumi Airport for air cargo. Laem Chabang Port (near Pattaya) for sea freight — Thailand\'s main container port. A Thai customs broker is recommended. Thailand is a growing e-commerce hub with Lazada and Shopee Thailand.',
-    popularProducts: ['Indian wooden home decor Thailand', 'Brass figurines wholesale Bangkok', 'Eco-friendly Indian handicrafts', 'Coconut shell products Thailand', 'Artisan Indian gifts wholesale', 'Hotel décor India Thailand'],
+    popularProducts: ['Indian wooden home decor Thailand', 'Brass figurines wholesale Bangkok', 'Eco-friendly Indian handicrafts', 'Artisan Indian gifts wholesale', 'Hotel décor India Thailand'],
     testimonial: null,
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Thailand?', a: 'Under ASEAN-India FTA (AIFTA), many Indian handicraft categories have reduced or 0% duty in Thailand. Wooden handicrafts (HS 4420): 0–10%. Brass items (HS 8306): 0–5%. Thai VAT of 7% applies. Certificate of Origin Form AI is required for AIFTA preferential rates.' },
       { q: 'How long does shipping from India to Thailand take?', a: 'Air freight via DHL or FedEx delivers to Bangkok (BKK/DMK) in 4–6 business days. Sea freight to Laem Chabang port takes 14–18 days. Thailand is also a good hub for distribution to Vietnam, Cambodia, and Myanmar within ASEAN.' },
-      { q: 'Can you supply Indian handicrafts for Thai hotels and tourism industry?', a: 'Yes. Thailand\'s hospitality and tourism industry is a major buyer of decorative handicrafts. We supply wooden décor, brass figurines, and gift items to Thai hotels, resorts, spas, and souvenir shops. Custom branding and packaging available for hotel room amenities and gift shops.' },
-    ],
+      { q: 'Can you supply Indian handicrafts for Thai hotels and tourism industry?', a: 'Yes. Thailand\'s hospitality and tourism industry is a major buyer of decorative handicrafts. We supply wooden décor, brass figurines, and gift items to Thai hotels, resorts, spas, and souvenir shops. Custom branding and packaging available for hotel room amenities and gift shops.' }],
     keywords: ['indian handicraft wholesale thailand', 'import handicrafts india thailand', 'wooden decor wholesale bangkok', 'brass figurines thailand wholesale', 'india handicraft supplier asean'],
     metaTitle: 'Indian Handicraft Wholesale for Thailand — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Thailand. Wooden artifacts, brass figurines & coconut products. AIFTA reduced duties. Air delivery to Bangkok in 4–6 days.',
+    metaDescription: 'Import wholesale Indian handicrafts to Thailand. Wooden artifacts, brass figurines. AIFTA reduced duties. Air delivery to Bangkok in 4–6 days.',
   },
 
   newzealand: {
@@ -843,13 +817,12 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'New Zealand has a relatively open import tariff. Most wooden handicrafts (HS 4420): 0–5%. Brass items (HS 8306): 0%. New Zealand GST of 15% applies on imports over NZ$1,000. NZ Customs (Customs and Excise Act 2018) manages imports. Strict biosecurity rules for wooden goods — phytosanitary certificate required.',
     vatGst: '15% New Zealand GST on commercial imports over NZ$1,000 — claimable by GST-registered NZ businesses.',
     customsTip: 'New Zealand Ministry for Primary Industries (MPI) enforces strict biosecurity. All wooden products must have ISPM-15 treatment (heat treatment / methyl bromide fumigation). Phytosanitary certificate mandatory. We provide compliant treated packaging and all required biosecurity documentation.',
-    popularProducts: ['Indian wooden home decor NZ', 'Brass decorative items New Zealand', 'Eco-friendly Indian handicrafts', 'Sustainable coconut products NZ', 'Artisan wooden gifts NZ', 'Fair trade Indian crafts New Zealand'],
+    popularProducts: ['Indian wooden home decor NZ', 'Brass decorative items New Zealand', 'Eco-friendly Indian handicrafts', 'Artisan wooden gifts NZ', 'Fair trade Indian crafts New Zealand'],
     testimonial: null,
     faqs: [
       { q: 'Do wooden handicrafts from India require biosecurity treatment for New Zealand?', a: 'Yes. New Zealand MPI has strict biosecurity requirements. All wooden goods must be treated to ISPM-15 standard (heat treatment or methyl bromide fumigation) and accompanied by a phytosanitary certificate from Indian authorities. We provide ISPM-15 treated packaging and all required biosecurity documentation.' },
       { q: 'What import duties apply on Indian handicrafts in New Zealand?', a: 'New Zealand has low tariffs: wooden handicrafts (HS 4420) typically 0–5%, brass items 0%. GST of 15% applies on commercial imports over NZ$1,000 and is claimable by GST-registered NZ businesses. No FTA between India and New Zealand — standard MFN rates apply.' },
-      { q: 'How long does shipping from India to Auckland or Christchurch take?', a: 'Air freight via DHL or FedEx delivers to Auckland or Christchurch in 5–8 business days. Sea freight takes 22–28 days to Auckland Port. New Zealand and Australia often share the same sea freight corridor — we can coordinate combined shipments for buyers in both countries.' },
-    ],
+      { q: 'How long does shipping from India to Auckland or Christchurch take?', a: 'Air freight via DHL or FedEx delivers to Auckland or Christchurch in 5–8 business days. Sea freight takes 22–28 days to Auckland Port. New Zealand and Australia often share the same sea freight corridor — we can coordinate combined shipments for buyers in both countries.' }],
     keywords: ['indian handicraft wholesale new zealand', 'import handicrafts india new zealand', 'wooden decor wholesale nz', 'brass figurines new zealand', 'eco handicrafts new zealand import'],
     metaTitle: 'Indian Handicraft Wholesale for New Zealand — Import from India | Vidhiraj Global Impex',
     metaDescription: 'Import wholesale Indian handicrafts to New Zealand. Wooden artifacts, brass figurines & eco-friendly products. ISPM-15 biosecurity compliant. DHL delivery in 5–8 days.',
@@ -877,8 +850,7 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'Que direitos aduaneiros se aplicam ao artesanato indiano em Portugal?', a: 'Ao abrigo do SPG da UE, a Índia beneficia de taxas reduzidas. Artigos de madeira esculpida (HS 4420): 0–2,7%. Artigos de latão (HS 8306): 0%. O IVA de importação é de 23%, completamente dedutível para empresas com IVA. Fornecemos o certificado de origem Form A.' },
       { q: 'Podem enviar diretamente para a nossa loja em Portugal?', a: 'Sim. Enviamos via DHL ou FedEx diretamente a lojas, armazéns ou centros Amazon em Portugal. O tracking é fornecido imediatamente após o envio. Prazo: 4–6 dias úteis por via aérea a partir de Chandigarh.' },
-      { q: 'Portugal pode ser usado como hub de distribuição para outros países lusófonos?', a: 'Sim. Portugal é uma excelente porta de entrada para o Brasil e países africanos lusófonos (Angola, Moçambique, Cabo Verde). Uma vez desalfandegado em Portugal, pode redistribuir dentro da UE sem formalidades aduaneiras adicionais.' },
-    ],
+      { q: 'Portugal pode ser usado como hub de distribuição para outros países lusófonos?', a: 'Sim. Portugal é uma excelente porta de entrada para o Brasil e países africanos lusófonos (Angola, Moçambique, Cabo Verde). Uma vez desalfandegado em Portugal, pode redistribuir dentro da UE sem formalidades aduaneiras adicionais.' }],
     keywords: ['artesanato indiano grossista portugal', 'importar artesanato da índia para portugal', 'figuras latão atacado portugal', 'fornecedor artesanato indiano portugal', 'decor étnico indiano portugal'],
     metaTitle: 'Artesanato Indiano Grossista para Portugal — Importar da Índia | Vidhiraj Global Impex',
     metaDescription: 'Importar artesanato indiano em grosso para Portugal. Artefactos de madeira, figuras de latão & produtos de coco. Direitos EU GSP 0%. Entrega DHL em 4–6 dias.',
@@ -893,7 +865,7 @@ const countries: Record<string, CountryData> = {
     currencySymbol: '€',
     region: 'Europe',
     headline: 'Indian Handicraft Wholesale Supplier for Ireland',
-    subheadline: 'Premium handcrafted Indian wooden artifacts, brass figurines & coconut products — delivered to Ireland in 3–5 days.',
+    subheadline: 'Premium handcrafted Indian wooden artifacts, brass figurines — delivered to Ireland in 3–5 days.',
     airFreightDays: '3–5 business days',
     seaFreightDays: '20–26 days',
     carriers: ['DHL', 'FedEx', 'UPS', 'An Post'],
@@ -901,16 +873,15 @@ const countries: Record<string, CountryData> = {
     importDutyNote: 'Ireland is an EU member — EU GSP preferential rates apply for Indian goods. Wooden handicrafts (HS 4420): 0–2.7%. Brass items (HS 8306): 0%. EORI number required for commercial importers. Irish VAT of 23% (standard rate) on imports — fully reclaimable for VAT-registered Irish businesses.',
     vatGst: '23% Irish VAT on imports — fully reclaimable by VAT-registered Irish businesses (Irish Revenue VAT registration required).',
     customsTip: 'Irish Revenue Customs manages imports. Dublin Airport (DUB) for air cargo. Dublin Port and Cork Port for sea freight. Post-Brexit, Ireland handles its own customs independently from the UK. EORI number mandatory. Ireland is a growing e-commerce market and serves as EU access point.',
-    popularProducts: ['Indian wooden home decor Ireland', 'Brass decorative figurines Ireland', 'Eco-friendly Indian crafts', 'Handmade coconut products IE', 'Artisan Indian gifts Dublin', 'Fair trade handicrafts Ireland'],
+    popularProducts: ['Indian wooden home decor Ireland', 'Brass decorative figurines Ireland', 'Eco-friendly Indian crafts', 'Artisan Indian gifts Dublin', 'Fair trade handicrafts Ireland'],
     testimonial: null,
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Ireland?', a: 'Ireland applies EU GSP rates: wooden handicrafts (HS 4420) 0–2.7%, brass items 0%. Irish VAT of 23% applies on imports but is fully reclaimable for VAT-registered businesses. EORI number required. We provide GSP Form A certificate. Post-Brexit, Ireland handles customs independently from the UK.' },
       { q: 'Has Brexit changed import rules for Ireland?', a: 'Post-Brexit, Ireland handles its own customs independently. Goods from India clear Irish customs directly without going through the UK. This actually simplifies some supply chains for Irish importers. EORI number required. EU GSP rates still apply as Ireland is an EU member.' },
-      { q: 'Can you ship to Dublin or Cork?', a: 'Yes. We ship via DHL or FedEx to any Irish address. Air freight delivers to Dublin in 3–5 business days. Sea freight to Dublin Port takes 20–26 days. Ireland is a growing market for artisan and fair-trade handicraft products.' },
-    ],
+      { q: 'Can you ship to Dublin or Cork?', a: 'Yes. We ship via DHL or FedEx to any Irish address. Air freight delivers to Dublin in 3–5 business days. Sea freight to Dublin Port takes 20–26 days. Ireland is a growing market for artisan and fair-trade handicraft products.' }],
     keywords: ['indian handicraft wholesale ireland', 'import handicrafts india ireland', 'wooden decor wholesale dublin', 'brass figurines ireland wholesale', 'eco handicrafts ireland import'],
     metaTitle: 'Indian Handicraft Wholesale for Ireland — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Ireland. Wooden artifacts, brass figurines & coconut products. EU GSP 0% duty. DHL delivery to Dublin in 3–5 days.',
+    metaDescription: 'Import wholesale Indian handicrafts to Ireland. Wooden artifacts, brass figurines. EU GSP 0% duty. DHL delivery to Dublin in 3–5 days.',
   },
 
   vietnam: {
@@ -935,11 +906,10 @@ const countries: Record<string, CountryData> = {
     faqs: [
       { q: 'What import duties apply on Indian handicrafts in Vietnam?', a: 'Under ASEAN-India FTA (AIFTA), many Indian handicraft categories benefit from reduced duties in Vietnam. Wooden handicrafts (HS 4420): 0–15% under AIFTA. Brass items (HS 8306): 0–10%. Vietnamese VAT of 10% applies. Certificate of Origin Form AI required for AIFTA preferential rates.' },
       { q: 'How long does shipping from India to Vietnam take?', a: 'Air freight via DHL or FedEx delivers to Ho Chi Minh City or Hanoi in 5–7 business days. Sea freight to Cat Lai Port (HCMC) or Hai Phong Port (Hanoi) takes 16–20 days. Vietnam is a growing retail and e-commerce market with strong demand for imported decorative products.' },
-      { q: 'Can you supply Indian handicrafts for Vietnamese e-commerce sellers on Shopee or Tiki?', a: 'Yes. We supply wholesale Indian handicrafts for Vietnamese e-commerce sellers on Shopee, Lazada, Tiki, and other platforms. We provide retail-ready packaging, detailed product descriptions, and complete import documentation for Vietnamese customs clearance.' },
-    ],
+      { q: 'Can you supply Indian handicrafts for Vietnamese e-commerce sellers on Shopee or Tiki?', a: 'Yes. We supply wholesale Indian handicrafts for Vietnamese e-commerce sellers on Shopee, Lazada, Tiki, and other platforms. We provide retail-ready packaging, detailed product descriptions, and complete import documentation for Vietnamese customs clearance.' }],
     keywords: ['hàng thủ công ấn độ bán buôn việt nam', 'nhập khẩu thủ công từ ấn độ vào việt nam', 'india handicraft wholesale vietnam', 'wooden decor wholesale vietnam', 'brass figurines vietnam import'],
     metaTitle: 'Indian Handicraft Wholesale for Vietnam — Import from India | Vidhiraj Global Impex',
-    metaDescription: 'Import wholesale Indian handicrafts to Vietnam. Wooden artifacts, brass figurines & coconut products. AIFTA reduced duties. Air delivery to HCMC in 5–7 days.',
+    metaDescription: 'Import wholesale Indian handicrafts to Vietnam. Wooden artifacts, brass figurines. AIFTA reduced duties. Air delivery to HCMC in 5–7 days.',
   },
 };
 

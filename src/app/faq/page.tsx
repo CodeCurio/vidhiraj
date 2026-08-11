@@ -129,7 +129,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: 'What HS codes do your products fall under?',
-    a: 'Common HS codes for our products: Wooden handicrafts — 4420, Brass figurines — 8306, Coconut shell handicrafts — 1404/4421. We provide the exact HS code on the Commercial Invoice for each product. Contact us for product-specific HS code confirmation.',
+    a: 'Common HS codes for our products: Wooden handicrafts — 4420, Brass figurines — 8306 — 1404/4421. We provide the exact HS code on the Commercial Invoice for each product. Contact us for product-specific HS code confirmation.',
   },
   // --- Payment ---
   {
@@ -143,7 +143,7 @@ const faqs: { q: string; a: string }[] = [
   // --- Sustainability ---
   {
     q: 'Are your products eco-friendly and sustainable?',
-    a: 'Yes. We use only natural, sustainably sourced materials — wood, brass, and coconut shell. We avoid synthetic dyes where possible, prefer plant-based and mineral finishes, and pack every order in 100% recyclable and biodegradable packaging. Zero single-use plastics in our facility.',
+    a: 'Yes. We use only natural, sustainably sourced materials — wood and brass. We avoid synthetic dyes where possible, prefer plant-based and mineral finishes, and pack every order in 100% recyclable and biodegradable packaging. Zero single-use plastics in our facility.',
   },
   {
     q: 'Are your products fair trade?',

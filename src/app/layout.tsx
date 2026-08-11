@@ -22,7 +22,7 @@ const organizationSchema = {
   logo: `${SITE_URL}/vidhiraj-logo.png`,
   image: `${SITE_URL}/vidhiraj-logo.png`,
   description:
-    'Leading manufacturer and exporter of handcrafted wooden artifacts, brass figurines & coconut handicrafts from India. Bulk orders, custom manufacturing, global shipping to 30+ countries. A venture of Vidhiraj Group of Companies.',
+    'Leading manufacturer and exporter of handcrafted wooden artifacts, brass figurines  from India. Bulk orders, custom manufacturing, global shipping to 30+ countries. A venture of Vidhiraj Group of Companies.',
   parentOrganization: {
     '@type': 'Organization',
     name: 'Vidhiraj Group of Companies',
@@ -54,7 +54,7 @@ const organizationSchema = {
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Handmade Wooden Artifacts' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Brass Figurines Wholesale' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: 'Coconut Shell Handicrafts' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Product', name: '' } },
     ],
   },
 };
@@ -64,7 +64,7 @@ const websiteSchema = {
   '@type': 'WebSite',
   name: 'Vidhiraj Global Impex',
   url: SITE_URL,
-  description: 'Indian handicraft manufacturer & exporter — wholesale wooden artifacts, brass figurines & coconut handicrafts shipped to 30+ countries.',
+  description: 'Indian handicraft manufacturer & exporter — wholesale wooden artifacts, brass figurines  shipped to 30+ countries.',
   publisher: {
     '@type': 'Organization',
     name: 'Vidhiraj Global Impex',
@@ -87,12 +87,11 @@ export const metadata: Metadata = {
     template: '%s | Vidhiraj Global Impex',
   },
   description:
-    'Leading manufacturer & exporter of handcrafted wooden artifacts, brass figurines & coconut handicrafts from India. A venture of Vidhiraj Group of Companies. Bulk orders, OEM manufacturing, shipping to 30+ countries.',
+    'Leading manufacturer & exporter of handcrafted wooden artifacts, brass figurines  from India. A venture of Vidhiraj Group of Companies. Bulk orders, OEM manufacturing, shipping to 30+ countries.',
   keywords: [
     'handicraft exporter india',
     'wooden handicraft manufacturer india',
     'brass figurines wholesale',
-    'coconut handicraft exporter',
     'india handicraft export',
     'handmade wooden artifacts wholesale',
     'buy handicrafts wholesale from india',
@@ -113,7 +112,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Vidhiraj Global Impex | Indian Handicraft Exporter',
     description:
-      'Premium handcrafted wooden artifacts, brass figurines & coconut handicrafts — wholesale & export from India to 30+ countries.',
+      'Premium handcrafted wooden artifacts, brass figurines  — wholesale & export from India to 30+ countries.',
     type: 'website',
     locale: 'en_US',
     siteName: 'Vidhiraj Global Impex',
@@ -131,7 +130,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vidhiraj Global Impex | Indian Handicraft Exporter',
     description:
-      'Premium handcrafted wooden artifacts, brass figurines & coconut handicrafts — wholesale & export from India.',
+      'Premium handcrafted wooden artifacts, brass figurines  — wholesale & export from India.',
     images: [`${SITE_URL}/opengraph-image`],
   },
   robots: {

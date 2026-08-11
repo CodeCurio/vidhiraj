@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About Us — Indian Handicraft Manufacturer & Direct Exporter, Chandigarh',
-  description: 'Vidhiraj Global Impex is a direct manufacturer of handmade wooden artifacts, brass figurines & coconut handicrafts in Chandigarh, India. 100+ artisans, 500+ global clients, 30+ export countries.',
+  description: 'Vidhiraj Global Impex is a direct manufacturer of handmade wooden artifacts, brass figurines  in Chandigarh, India. 100+ artisans, 500+ global clients, 30+ export countries.',
   keywords: [
     'indian handicraft manufacturer',
     'direct handicraft exporter india',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/about' },
   openGraph: {
     title: 'About Vidhiraj Global Impex — Direct Handicraft Manufacturer, India',
-    description: 'Direct manufacturer of handmade wooden, brass & coconut handicrafts from Chandigarh, India. 500+ global clients across 30+ countries.',
+    description: 'Direct manufacturer of handmade wooden, brass  from Chandigarh, India. 500+ global clients across 30+ countries.',
     url: '/about',
     type: 'website',
   },
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 Today, we are a full-scale manufacturing and export company with a team of 100+ skilled artisans, modern production facilities, and a dedicated export management team. We work with wholesalers, boutiques, e-commerce retailers, and branded labels across 30+ countries.
               </p>
               <p className="text-base leading-relaxed" style={{ color: '#555' }}>
-                Our product range includes handmade wooden artifacts, brass figurines, coconut shell decor, and a variety of artisan crafts — all 100% handmade with traditional techniques, eco-friendly materials, and contemporary design sensibility.
+                Our product range includes handmade wooden artifacts, brass figurines, and a variety of artisan crafts — all 100% handmade with traditional techniques, eco-friendly materials, and contemporary design sensibility.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -175,7 +175,7 @@ export default function AboutPage() {
               </span>
               <h2 className="section-title mt-2">Manufacturing Capability</h2>
               <p className="text-base leading-relaxed mb-6" style={{ color: '#555' }}>
-                Our 10,000 sq. ft. production facility in Chandigarh houses dedicated sections for wood carving, brass casting & finishing, coconut shell crafting, quality control, and packaging. We have the capacity to fulfill both small boutique orders and large wholesale volumes.
+                Our 10,000 sq. ft. production facility in Chandigarh houses dedicated sections for wood carving, brass casting & finishing, quality control, and packaging. We have the capacity to fulfill both small boutique orders and large wholesale volumes.
               </p>
               <ul className="space-y-3 mb-6">
                 {[

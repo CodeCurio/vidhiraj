@@ -13,7 +13,6 @@ const COUNTRIES = [
 const PRODUCT_CATEGORIES = [
   'Wooden Handicrafts & Artifacts',
   'Brass Figurines & Sculptures',
-  'Coconut Shell Products & Decor',
   'Custom / OEM Order',
   'Mixed / Multiple Categories',
   'Other',

@@ -59,7 +59,7 @@ This guide walks you through every step of importing handicrafts from India in 2
 
 Before contacting suppliers, get specific about your product requirements:
 
-- **Product type:** Wooden artifacts, brass figurines, coconut shell decor, textiles, leather goods, etc.
+- **Product type:** Wooden artifacts, brass figurines, textiles, leather goods, etc.
 - **Quantity:** How many pieces per order? Understanding your MOQ needs will help narrow down which manufacturers can serve you.
 - **Customisation:** Do you need your logo, custom colours, or exclusive designs?
 - **Budget:** What is your target landed cost per unit (product + shipping + import duty)?
@@ -193,7 +193,7 @@ Once satisfied, maintain a reorder calendar. Most successful importers plan 2–
 
 ## Ready to Start?
 
-[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) is a direct manufacturer and exporter of handmade wooden artifacts, brass figurines, and coconut shell handicrafts from Chandigarh, India. We ship to 30+ countries with full export documentation.
+[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) is a direct manufacturer and exporter of handmade wooden artifacts, brass figurines from Chandigarh, India. We ship to 30+ countries with full export documentation.
 
 [Request a wholesale quote →](/inquiry) or [WhatsApp us](https://wa.me/918288840802) for immediate assistance.
 `,
@@ -203,11 +203,11 @@ Once satisfied, maintain a reorder calendar. Most successful importers plan 2–
   {
     title: 'Top 10 Indian Handicraft Products for Wholesale Buyers in 2025',
     slug: 'top-10-indian-handicraft-products-wholesale',
-    excerpt: 'The best-selling Indian handicraft products for international wholesale buyers — wooden artifacts, brass figurines, coconut shell decor, and more. Demand data, pricing, and sourcing tips.',
+    excerpt: 'The best-selling Indian handicraft products for international wholesale buyers — wooden artifacts, brass figurines, and more. Demand data, pricing, and sourcing tips.',
     author: 'Vidhiraj Global Impex',
     tags: ['wholesale products', 'best selling handicrafts', 'indian handicraft', 'product guide'],
     seoTitle: 'Top 10 Indian Handicraft Products for Wholesale Buyers 2025',
-    seoDescription: 'Discover the best-selling Indian handicraft products for wholesale: wooden artifacts, brass figurines, coconut shell decor, and more. Demand data and sourcing tips.',
+    seoDescription: 'Discover the best-selling Indian handicraft products for wholesale: wooden artifacts, brass figurines, and more. Demand data and sourcing tips.',
     published: true,
     content: `# Top 10 Indian Handicraft Products for Wholesale Buyers in 2025
 
@@ -249,7 +249,7 @@ If you are a wholesale buyer, boutique owner, or e-commerce retailer looking to 
 
 ---
 
-## 3. Coconut Shell Handicrafts
+## 3.
 
 **Why they sell:** Eco-friendly, sustainable, and on-trend. Coconut shell products align with the growing zero-waste and natural living movement.
 
@@ -359,7 +359,7 @@ If you are a wholesale buyer, boutique owner, or e-commerce retailer looking to 
 
 ## How to Source These Products
 
-All 10 of these product categories are available from [Vidhiraj Global Impex](https://vidhirajglobalimpex.com) — a direct manufacturer in Chandigarh, India, specialising in wooden artifacts, brass figurines, and coconut shell handicrafts.
+All 10 of these product categories are available from [Vidhiraj Global Impex](https://vidhirajglobalimpex.com) — a direct manufacturer in Chandigarh, India, specialising in wooden artifacts, brass figurines.
 
 We offer:
 - Factory-direct pricing (no agents, no commission)
@@ -439,7 +439,7 @@ Products made from ivory, tortoiseshell, certain animal bones, or skins of prote
 ### Sandalwood
 Raw or primary sandalwood export is heavily restricted. Finished sandalwood products (incense, oils) may be exported with documentation.
 
-**What this means for buyers:** Stick to suppliers working with legal materials — wood, brass, coconut shell, cotton, silk. Always request a declaration of materials used.
+**What this means for buyers:** Stick to suppliers working with legal materials — wood, brass, cotton, silk. Always request a declaration of materials used.
 
 ---
 
@@ -513,7 +513,7 @@ Vidhiraj Global Impex is a fully compliant Indian handicraft exporter:
 - ✅ EPCH-registered exporter
 - ✅ All export documentation prepared in-house
 - ✅ ISPM-15 compliant packaging
-- ✅ Legally sourced materials (wood, brass, coconut shell)
+- ✅ Legally sourced materials (wood, brass)
 
 [Contact our export team →](/contact) or [submit an inquiry →](/inquiry) for a complete documentation checklist for your country.
 `,
@@ -762,7 +762,7 @@ Most successful wholesale buyers carry a mix. Wooden products drive volume; bras
 
 ## Coconut Shell — The Underrated Third Option
 
-Do not overlook coconut shell handicrafts. They are:
+Do not overlook. They are:
 - The cheapest to source ($0.50–$5/pc)
 - Genuinely eco-friendly (zero-waste by-product)
 - Extremely on-trend with sustainable lifestyle consumers
@@ -774,7 +774,7 @@ Coconut shell bowls, cups, and accessories are bestsellers in Australia, Germany
 
 ## Source All Three from One Supplier
 
-[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) manufactures all three categories — wooden artifacts, brass figurines, and coconut shell handicrafts — under one roof. This means:
+[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) manufactures all three categories — wooden artifacts, brass figurines — under one roof. This means:
 
 - One supplier relationship
 - One shipment, combined freight
@@ -818,7 +818,7 @@ For wholesale buyers, this means that eco-friendly Indian handicrafts are not ju
 
 ### 1. Natural Materials
 
-The three core materials of Indian handicraft manufacturing — wood, brass, and coconut shell — are all natural, non-synthetic, and sustainable when sourced responsibly.
+The three core materials of Indian handicraft manufacturing — wood and brass — are all natural, non-synthetic, and sustainable when sourced responsibly.
 
 - **Wood** (mango, sheesham, neem): Sourced from plantation forests. Naturally biodegradable.
 - **Brass**: An alloy of copper and zinc, highly recyclable, durable, and long-lasting. No single-use waste.
@@ -899,7 +899,7 @@ These narratives command 20–40% price premiums in eco-conscious retail.
 
 ## Source Eco-Friendly Indian Handicrafts
 
-[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) manufactures sustainable handmade products using natural wood, brass, and coconut shell. Our practices include:
+[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) manufactures sustainable handmade products using natural wood and brass. Our practices include:
 
 - Sustainably sourced raw materials
 - Zero single-use plastics in our workshop
@@ -1283,7 +1283,7 @@ The wood carving quality of Chandigarh-region artisans is considered among the f
 ### Brass Figurines & Home Decor
 Chandigarh-based manufacturers source cast brass from Moradabad and perform the critical value-addition steps: hand-finishing, antiquing, polishing, and surface treatment. The result is high-quality export-grade brass decor at competitive prices.
 
-### Coconut Shell Handicrafts
+###
 Though coconut shell is native to South India, Chandigarh manufacturers have developed expertise in processing and crafting coconut shell goods — bowls, jewellery, tableware — that meet international quality and food-safety standards.
 
 ---
@@ -1316,7 +1316,7 @@ Unlike massive factories in other regions that only serve large retailers, Chand
 
 ## Vidhiraj Global Impex — Based in Chandigarh
 
-[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) is proud to be based in Chandigarh, working directly with the region's skilled artisan communities. Our manufacturing facility is in Chandigarh, with a team of 100+ artisans producing handmade wooden artifacts, brass figurines, and coconut shell handicrafts for wholesale buyers in 30+ countries.
+[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) is proud to be based in Chandigarh, working directly with the region's skilled artisan communities. Our manufacturing facility is in Chandigarh, with a team of 100+ artisans producing handmade wooden artifacts, brass figurines for wholesale buyers in 30+ countries.
 
 We offer [virtual factory tours](/contact), [product samples](/inquiry), and [full export documentation](/export-services) for international buyers.
 
@@ -1717,7 +1717,7 @@ Most successful Etsy handicraft shops operate under this model — they source f
 - **Story-rich:** "Handcarved by artisans in Chandigarh, India" is a compelling product story
 - **Visually distinctive:** Stands out against mass-produced alternatives
 - **Margin-rich:** Source at $3–$15, sell at $25–$90 on Etsy
-- **Eco-narrative:** Wood, brass, coconut shell = sustainable, natural materials
+- **Eco-narrative:** wood, brass = sustainable, natural materials
 
 ---
 
@@ -1845,7 +1845,7 @@ Indian handicrafts are uniquely positioned to capture this shift. This guide cov
 
 ## Why Indian Handicrafts for Corporate Gifting?
 
-- **Sustainability credentials:** Wood, brass, coconut shell — natural materials that align with ESG commitments
+- **Sustainability credentials:** wood, brass — natural materials that align with ESG commitments
 - **Memorable:** A handcarved wooden item is kept; a plastic branded item is thrown away
 - **Customisable:** Logo engraving, custom packaging, bespoke designs
 - **Price range:** $5–$80 per unit — suitable for all budget tiers
@@ -1901,7 +1901,7 @@ Custom-cut wooden fridge magnets in your logo shape or brand colours. Extremely 
 
 | Customisation | Available On | Min Quantity |
 |---------------|-------------|--------------|
-| Logo laser engraving | Wood, brass, coconut shell | 100 pcs |
+| Logo laser engraving | wood, brass | 100 pcs |
 | Custom paint colours (Pantone) | Wooden items | 100 pcs |
 | Branded gift box with logo | All products | 50 pcs |
 | Custom hang tags | All products | 50 pcs |
@@ -2531,7 +2531,7 @@ Available:
     author: 'Vidhiraj Global Impex',
     tags: ['home decor wholesale', 'india wholesale', 'home decor sourcing', 'wholesale home accessories', 'interior decor india'],
     seoTitle: 'Home Decor Wholesale from India 2025 — Products, MOQ & Shipping Guide',
-    seoDescription: 'Source home decor wholesale from India. Wooden artifacts, brass decor, coconut accessories. MOQ from 50 pcs, DHL shipping. Complete buyer guide 2025.',
+    seoDescription: 'Source home decor wholesale from India. Wooden artifacts, brass decor. MOQ from 50 pcs, DHL shipping. Complete buyer guide 2025.',
     published: true,
     content: `# Home Decor Wholesale from India — Products, MOQ, and Shipping Guide 2025
 
@@ -2683,7 +2683,7 @@ ESG-conscious consumers will not buy products they cannot justify ethically. Nat
 
 ## Source Home Decor Wholesale from Vidhiraj Global Impex
 
-[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) exports handmade home decor in three core categories — wooden artifacts, brass figurines, and coconut shell accessories — from our Chandigarh manufacturing facility to retailers in 30+ countries.
+[Vidhiraj Global Impex](https://vidhirajglobalimpex.com) exports handmade home decor in three core categories — wooden artifacts and brass figurines accessories — from our Chandigarh manufacturing facility to retailers in 30+ countries.
 
 - Direct factory pricing
 - MOQ from 50 pcs per design

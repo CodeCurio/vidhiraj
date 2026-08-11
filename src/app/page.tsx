@@ -68,7 +68,7 @@ export default async function HomePage() {
                   {
                     icon: <Layers size={22} />,
                     title: 'Multiple Product Lines',
-                    desc: 'Wooden artifacts, brass figurines, coconut handicrafts, and more — all manufactured under one roof.',
+                    desc: 'Wooden artifacts, brass figurines, and more — all manufactured under one roof.',
                   },
                   {
                     icon: <ShieldCheck size={22} />,
@@ -185,52 +185,89 @@ export default async function HomePage() {
 
 
 
-      {/* GLOBAL REACH */}
-      <section className="py-16 px-4 bg-white">
+      {/* GLOBAL REACH — Marquee */}
+      <section className="py-20 px-4 overflow-hidden" style={{ background: '#FFF8F0' }}>
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#D4AF37' }}>
-              Worldwide Presence
+          <div className="text-center mb-14">
+            <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full" style={{ color: '#8B4513', background: 'rgba(212,175,55,0.12)', border: '1px solid rgba(212,175,55,0.25)' }}>
+              <Globe size={14} /> Worldwide Presence
             </span>
-            <h2 className="section-title mt-2">We Export to 30+ Countries</h2>
-            <p className="section-subtitle">Our products reach buyers across every continent</p>
+            <h2 className="section-title mt-4">We Export to 30+ Countries</h2>
+            <p className="section-subtitle">Trusted by international buyers across every continent</p>
           </div>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3 mb-10">
-            {[
-              { code: 'us', country: 'USA' },
-              { code: 'gb', country: 'UK' },
-              { code: 'de', country: 'Germany' },
-              { code: 'fr', country: 'France' },
-              { code: 'au', country: 'Australia' },
-              { code: 'ae', country: 'UAE' },
-              { code: 'ca', country: 'Canada' },
-              { code: 'jp', country: 'Japan' },
-              { code: 'it', country: 'Italy' },
-              { code: 'nl', country: 'Netherlands' },
-              { code: 'sg', country: 'Singapore' },
-              { code: 'za', country: 'South Africa' },
-              { code: 'br', country: 'Brazil' },
-              { code: 'mx', country: 'Mexico' },
-              { code: 'sa', country: 'Saudi Arabia' },
-            ].map((item) => (
-              <div
-                key={item.country}
-                className="flex flex-col items-center justify-center gap-2 rounded-xl py-4 px-2 text-center transition-shadow hover:shadow-md"
-                style={{ background: '#fff', border: '1px solid #f0e0cc', boxShadow: '0 1px 4px rgba(0,0,0,0.05)' }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={`https://flagcdn.com/w40/${item.code}.png`}
-                  srcSet={`https://flagcdn.com/w80/${item.code}.png 2x`}
-                  width={36}
-                  height={27}
-                  alt={item.country}
-                  style={{ borderRadius: 3, objectFit: 'cover', display: 'block' }}
-                />
-                <span className="text-xs font-semibold" style={{ color: '#1C1C1C' }}>{item.country}</span>
+        </div>
+
+        {(() => {
+          const row1 = [
+            { code: 'us', country: 'USA' },
+            { code: 'gb', country: 'UK' },
+            { code: 'de', country: 'Germany' },
+            { code: 'fr', country: 'France' },
+            { code: 'au', country: 'Australia' },
+            { code: 'ae', country: 'UAE' },
+            { code: 'ca', country: 'Canada' },
+            { code: 'jp', country: 'Japan' },
+            { code: 'it', country: 'Italy' },
+            { code: 'nl', country: 'Netherlands' },
+          ];
+          const row2 = [
+            { code: 'sg', country: 'Singapore' },
+            { code: 'za', country: 'South Africa' },
+            { code: 'br', country: 'Brazil' },
+            { code: 'mx', country: 'Mexico' },
+            { code: 'sa', country: 'Saudi Arabia' },
+            { code: 'kr', country: 'South Korea' },
+            { code: 'se', country: 'Sweden' },
+            { code: 'ch', country: 'Switzerland' },
+            { code: 'nz', country: 'New Zealand' },
+            { code: 'no', country: 'Norway' },
+          ];
+
+          const CountryPill = ({ code, country }: { code: string; country: string }) => (
+            <div
+              className="flex items-center gap-3 rounded-full py-3 px-5 flex-shrink-0 transition-shadow hover:shadow-lg"
+              style={{ background: '#fff', border: '1px solid #f0e0cc', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`https://flagcdn.com/w40/${code}.png`}
+                srcSet={`https://flagcdn.com/w80/${code}.png 2x`}
+                width={28}
+                height={21}
+                alt={country}
+                style={{ borderRadius: 3, objectFit: 'cover', display: 'block' }}
+              />
+              <span className="text-sm font-semibold whitespace-nowrap" style={{ color: '#1C1C1C' }}>{country}</span>
+            </div>
+          );
+
+          return (
+            <div className="space-y-5">
+              {/* Row 1 — scroll left */}
+              <div className="relative">
+                <div className="absolute left-0 top-0 bottom-0 w-24 z-10" style={{ background: 'linear-gradient(to right, #FFF8F0, transparent)' }} />
+                <div className="absolute right-0 top-0 bottom-0 w-24 z-10" style={{ background: 'linear-gradient(to left, #FFF8F0, transparent)' }} />
+                <div className="flex gap-4 marquee-scroll-left">
+                  {[...row1, ...row1, ...row1].map((item, i) => (
+                    <CountryPill key={`r1-${i}`} code={item.code} country={item.country} />
+                  ))}
+                </div>
               </div>
-            ))}
-          </div>
+              {/* Row 2 — scroll right */}
+              <div className="relative">
+                <div className="absolute left-0 top-0 bottom-0 w-24 z-10" style={{ background: 'linear-gradient(to right, #FFF8F0, transparent)' }} />
+                <div className="absolute right-0 top-0 bottom-0 w-24 z-10" style={{ background: 'linear-gradient(to left, #FFF8F0, transparent)' }} />
+                <div className="flex gap-4 marquee-scroll-right">
+                  {[...row2, ...row2, ...row2].map((item, i) => (
+                    <CountryPill key={`r2-${i}`} code={item.code} country={item.country} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          );
+        })()}
+
+        <div className="max-w-7xl mx-auto mt-14">
           <div
             className="rounded-2xl p-8 text-center"
             style={{ background: 'linear-gradient(135deg, #8B4513, #6B3410)', color: '#FFF8F0' }}
@@ -247,6 +284,29 @@ export default async function HomePage() {
             </Link>
           </div>
         </div>
+
+        <style dangerouslySetInnerHTML={{__html: `
+          @keyframes marqueeLeft {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-33.333%); }
+          }
+          @keyframes marqueeRight {
+            0% { transform: translateX(-33.333%); }
+            100% { transform: translateX(0); }
+          }
+          .marquee-scroll-left {
+            animation: marqueeLeft 30s linear infinite;
+            width: max-content;
+          }
+          .marquee-scroll-right {
+            animation: marqueeRight 35s linear infinite;
+            width: max-content;
+          }
+          .marquee-scroll-left:hover,
+          .marquee-scroll-right:hover {
+            animation-play-state: paused;
+          }
+        `}} />
       </section>
 
       {/* REVIEWS SECTION */}

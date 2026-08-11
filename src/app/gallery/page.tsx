@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: 'Product Gallery — Handcrafted Wooden, Brass & Coconut Handicrafts from India',
-  description: 'Browse our gallery of 200+ handcrafted wooden artifacts, brass figurines, and coconut shell decor from India. See the quality before placing your wholesale order.',
+  title: 'Product Gallery — Handcrafted Wooden, Brass  from India',
+  description: 'Browse our gallery of 200+ handcrafted wooden artifacts, brass figurines from India. See the quality before placing your wholesale order.',
   keywords: [
     'indian handicraft gallery',
     'wooden artifact photos india',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/gallery' },
   openGraph: {
     title: 'Product Gallery — Indian Handicrafts Wholesale',
-    description: '200+ handcrafted wooden artifacts, brass figurines & coconut decor. See quality before ordering wholesale.',
+    description: '200+ handcrafted wooden artifacts, brass figurines . See quality before ordering wholesale.',
     url: '/gallery',
     type: 'website',
   },

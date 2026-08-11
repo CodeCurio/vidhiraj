@@ -32,7 +32,6 @@ const BADGES = [
 const IMAGES = [
   { seed: 'wooden1', label: 'Wooden Artifact' },
   { seed: 'brass2', label: 'Brass Figurine' },
-  { seed: 'coconut3', label: 'Coconut Decor' },
 ];
 
 export default function HeroSection() {

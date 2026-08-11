@@ -41,7 +41,7 @@ export default async function ContactPage() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Vidhiraj Global Impex',
-    description: 'Indian handicraft manufacturer and exporter of wooden artifacts, brass figurines & coconut handicrafts. Wholesale & export to 30+ countries.',
+    description: 'Indian handicraft manufacturer and exporter of wooden artifacts, brass figurines . Wholesale & export to 30+ countries.',
     url: 'https://vidhirajglobalimpex.com',
     logo: 'https://vidhirajglobalimpex.com/vidhiraj-logo.png',
     telephone: phone || '+91-82888-40802',

@@ -55,22 +55,7 @@ const REVIEWS: Review[] = [
     reviewText: 'Finding authentic Indian brassware suppliers who adhere to strict weight tolerances and lead-free alloy standards used to be difficult. Vidhiraj provided complete metallurgy lab certificates and laser-etched our brand logo on the base of every brass figurine. Repeat orders are already in production!',
     tag: 'Brass Figurines',
   },
-  {
-    id: '3',
-    name: 'Dr. Hans Weber',
-    role: 'Product Category Manager',
-    company: 'Bavarian Living GmbH',
-    location: 'Munich, Germany',
-    flag: '🇩🇪',
-    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&auto=format&fit=crop&q=80',
-    rating: 5,
-    date: '04 Nov 2025',
-    source: 'google',
-    verifiedProduct: '3,000 Eco Coconut Shell Bowls & Candle Holders',
-    title: 'Fast 10-day sample turnaround & flawless customs documentation',
-    reviewText: 'German customs requires precise Certificate of Origin (COO), phytosanitary certificates, and HS code documentation. Vidhiraj’s export documentation team handled everything seamlessly without a single delay at Hamburg port. The polished coconut shell bowls sell out in days.',
-    tag: 'Coconut Crafts',
-  },
+  
   {
     id: '4',
     name: 'Evelyn Tan',
@@ -103,25 +88,10 @@ const REVIEWS: Review[] = [
     reviewText: 'We have been importing handicrafts from India for over 12 years. Working with Vidhiraj Global Impex was a game changer — clear WhatsApp updates with video inspections prior to stuffing containers. Their pricing is unbeatable for the level of handmade craftsmanship.',
     tag: 'Wooden Handicrafts',
   },
-  {
-    id: '6',
-    name: 'Claire Dubois',
-    role: 'Eco Products Buyer',
-    company: 'Maison Eco Crafts',
-    location: 'Paris, France',
-    flag: '🇫🇷',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format&fit=crop&q=80',
-    rating: 5,
-    date: '02 Aug 2025',
-    source: 'etsy',
-    verifiedProduct: '1,500 Coconut Shell Kitchenware Pieces',
-    title: '100% natural, food-grade polished, eco-friendly certification',
-    reviewText: 'EU environmental regulations are extremely strict regarding natural food containers. Vidhiraj supplied organic coconut oil polished bowls with zero chemical varnishes. Our French customers love the story of artisan women empowered through these products.',
-    tag: 'Coconut Crafts',
-  },
+  
 ];
 
-const CATEGORIES = ['All', 'Wooden Handicrafts', 'Brass Figurines', 'Coconut Crafts', 'Custom OEM Orders'];
+const CATEGORIES = ['All', 'Wooden Handicrafts', 'Brass Figurines', 'Custom OEM Orders'];
 
 export default function ReviewsSection() {
   const [activeCategory, setActiveCategory] = useState('All');

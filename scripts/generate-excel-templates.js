@@ -18,8 +18,7 @@ const categories = [
   ['Gifting & Hampers', 'gifting-hampers', ''],
   ['Brass Handicraft', 'brass-handicraft', ''],
   ['Wooden Handicraft', 'wooden-handicraft', ''],
-  ['Coconut Handicraft', 'coconut-handicraft', ''],
-];
+  ];
 
 const catWs = XLSX.utils.aoa_to_sheet(categories);
 catWs['!cols'] = [{ wch: 30 }, { wch: 25 }, { wch: 55 }];

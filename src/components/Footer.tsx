@@ -43,7 +43,7 @@ export default async function Footer() {
               </p>
             </div>
             <p className="text-sm leading-relaxed mb-4" style={{ color: '#ccc' }}>
-              Premium handicraft exporter from India. Specializing in 100% handmade wooden artifacts, brass figurines, and coconut shell handicrafts — eco-friendly crafted for international buyers and wholesalers.
+              Premium handicraft exporter from India. Specializing in 100% handmade wooden artifacts, brass figurines — eco-friendly crafted for international buyers and wholesalers.
             </p>
             <div className="flex items-center gap-2.5 mt-4">
               {/* Facebook */}

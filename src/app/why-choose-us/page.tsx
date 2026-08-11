@@ -87,7 +87,7 @@ export default function WhyChooseUsPage() {
               {
                 icon: <Star size={32} />,
                 title: 'Uncompromising Quality',
-                desc: 'Every product that leaves our facility passes through a rigorous 3-stage quality inspection. We use only premium natural materials — select hardwood, pure brass alloy, organic coconut shell — sourced from trusted suppliers. Our defect rate is below 0.5%, which is why buyers keep reordering.',
+                desc: 'Every product that leaves our facility passes through a rigorous 3-stage quality inspection. We use only premium natural materials — select hardwood, pure brass alloy — sourced from trusted suppliers. Our defect rate is below 0.5%, which is why buyers keep reordering.',
                 points: ['Premium grade raw materials only', '3-stage quality inspection process', 'Pre-shipment inspection report provided', 'Less than 0.5% defect rate'],
                 image: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=600&q=80',
                 reverse: false,
@@ -111,8 +111,8 @@ export default function WhyChooseUsPage() {
               {
                 icon: <Leaf size={32} />,
                 title: 'Eco-Friendly by Design',
-                desc: 'Sustainability is built into how we work, not added as a label. We use natural materials — wood, brass, coconut shell — avoid synthetic dyes where possible, and package every order in 100% recyclable materials. Buying from us means supporting ethical, planet-conscious manufacturing.',
-                points: ['Natural materials: wood, brass, coconut shell', 'Eco-conscious dyeing & finishing processes', '100% recyclable export packaging', 'Zero single-use plastics in our workshop'],
+                desc: 'Sustainability is built into how we work, not added as a label. We use natural materials — wood, brass — avoid synthetic dyes where possible, and package every order in 100% recyclable materials. Buying from us means supporting ethical, planet-conscious manufacturing.',
+                points: ['Natural materials: wood, brass', 'Eco-conscious dyeing & finishing processes', '100% recyclable export packaging', 'Zero single-use plastics in our workshop'],
                 image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80',
                 reverse: true,
               },

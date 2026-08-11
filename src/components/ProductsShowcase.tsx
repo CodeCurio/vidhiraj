@@ -1,85 +1,53 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
-import ProductCard from './ProductCard';
-import { ArrowRight, Sparkles, Grid, Box, Award, Leaf, Gift, LayoutGrid, ChevronRight } from 'lucide-react';
 import type { Product, Category } from '@/types';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 interface Props {
-  allProducts: Product[];
+  allProducts?: Product[]; // Kept for compatibility if passed
   categories: Category[];
 }
 
-function getCategoryIcon(name: string) {
-  const lower = name.toLowerCase();
-  if (lower.includes('all')) return Sparkles;
-  if (lower.includes('wood')) return Box;
-  if (lower.includes('brass') || lower.includes('metal')) return Award;
-  if (lower.includes('coconut')) return Leaf;
-  if (lower.includes('gift') || lower.includes('hamper')) return Gift;
-  return LayoutGrid;
-}
+export default function ProductsShowcase({ categories = [] }: Props) {
+  const targetRef = useRef<HTMLDivElement>(null);
+  
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
 
-export default function ProductsShowcase({ allProducts = [], categories = [] }: Props) {
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  // Filter out coconut if any lingering data is passed
+  const displayCategories = categories.filter(c => !c.name.toLowerCase().includes('coconut'));
 
-  // Build category options list
-  const categoryNames = useMemo(() => {
-    const list: Array<{ id: string; name: string; count: number }> = [
-      { id: 'all', name: 'All Collection', count: allProducts.length },
-    ];
+  // Calculate dynamic transform based on number of items to ensure we can scroll to the end exactly
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "calc(-100% + 100vw)"]); 
 
-    categories.forEach((cat) => {
-      const count = allProducts.filter(
-        (p) => p.category.toLowerCase().trim() === cat.name.toLowerCase().trim()
-      ).length;
-      list.push({
-        id: cat.id,
-        name: cat.name,
-        count: count > 0 ? count : 4,
-      });
-    });
-
-    return list;
-  }, [allProducts, categories]);
-
-  // Filtered products calculation
-  const displayedProducts = useMemo(() => {
-    if (selectedCategory === 'all') {
-      const featured = allProducts.filter((p) => p.featured);
-      return featured.length >= 4 ? featured.slice(0, 8) : allProducts.slice(0, 8);
-    }
-
-    const foundCategory = categoryNames.find((c) => c.id === selectedCategory);
-    if (!foundCategory) return allProducts.slice(0, 8);
-
-    const filtered = allProducts.filter(
-      (p) => p.category.toLowerCase().trim() === foundCategory.name.toLowerCase().trim()
-    );
-
-    return filtered.length > 0 ? filtered.slice(0, 8) : allProducts.slice(0, 8);
-  }, [selectedCategory, allProducts, categoryNames]);
-
-  const activeCategoryObj = categoryNames.find((c) => c.id === selectedCategory);
+  // Category to image mapping
+  const categoryImages: Record<string, string> = {
+    'Wooden Handicraft': '/images/wooden-category.avif',
+    'Brass Handicraft': '/images/brass-category.avif',
+    'Gifting & Hampers': '/images/custom-category.avif',
+    'Custom OEM Orders': '/images/custom-category.avif',
+  };
 
   return (
-    <section className="py-14 sm:py-20 px-4 relative overflow-hidden" style={{ background: '#FFF8F0' }}>
-      {/* Background subtle dot pattern */}
-      <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-full opacity-25 pointer-events-none"
-        style={{
-          backgroundImage: 'radial-gradient(circle, #D4AF37 0.75px, transparent 0.75px)',
-          backgroundSize: '24px 24px',
-        }}
-      />
-
-      <div className="max-w-7xl mx-auto relative z-10">
-
-        {/* SECTION HEADER */}
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
-          <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-3"
+    <section ref={targetRef} className="relative h-[250vh] bg-[#FFF8F0]">
+      <div className="sticky top-0 h-[100vh] pt-24 pb-12 flex flex-col justify-center overflow-hidden">
+        
+        {/* Subtle Background pattern */}
+        <div 
+          className="absolute inset-0 opacity-30 pointer-events-none"
+          style={{
+            backgroundImage: 'radial-gradient(circle, #D4AF37 0.75px, transparent 0.75px)',
+            backgroundSize: '24px 24px',
+          }}
+        />
+        
+        <div className="relative z-10 px-6 md:px-16 mb-8 max-w-[1400px] w-full">
+           <div
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4"
             style={{ background: 'rgba(212,175,55,0.15)', border: '1px solid rgba(212,175,55,0.3)' }}
           >
             <Sparkles size={14} color="#8B4513" />
@@ -88,123 +56,61 @@ export default function ProductsShowcase({ allProducts = [], categories = [] }: 
             </span>
           </div>
 
-          <h2
-            className="text-2xl sm:text-4xl font-bold mb-3"
-            style={{ color: '#1C1C1C', fontFamily: 'Georgia, serif' }}
-          >
-            Explore Our Handcrafted Collections
-          </h2>
-
-          <p className="text-xs sm:text-base text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            Select a category below to browse 100% handmade wooden artifacts, brass statuettes, and coconut shell crafts.
-          </p>
+           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold" style={{ color: '#1C1C1C', fontFamily: 'Georgia, serif' }}>
+             Explore Our Categories
+           </h2>
+           <p className="text-gray-600 mt-3 max-w-2xl text-base md:text-lg">
+             Scroll down to explore our exclusive handcrafted collections. Each piece tells a story of traditional Indian craftsmanship.
+           </p>
         </div>
 
-        {/* CATEGORY OPTION BAR (TOUCH SWIPE ON MOBILE, CENTERED FLEX ON DESKTOP) */}
-        <div className="relative mb-8 sm:mb-12">
-          {/* Scrollable Container */}
-          <div className="-mx-4 px-4 sm:mx-0 sm:px-0 flex items-center gap-2.5 overflow-x-auto no-scrollbar py-2 sm:flex-wrap sm:justify-center scroll-smooth">
-            {categoryNames.map((cat) => {
-              const isActive = selectedCategory === cat.id;
-              const Icon = getCategoryIcon(cat.name);
-              return (
-                <button
-                  key={cat.id}
-                  onClick={() => setSelectedCategory(cat.id)}
-                  className={`flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl text-xs sm:text-sm font-semibold transition-all duration-300 flex-shrink-0 cursor-pointer ${
-                    isActive
-                      ? 'shadow-lg shadow-amber-950/20 scale-105'
-                      : 'bg-white text-gray-700 hover:text-amber-900 hover:bg-amber-50/50 hover:border-amber-400 hover:scale-102 shadow-xs'
-                  }`}
-                  style={{
-                    background: isActive ? 'linear-gradient(135deg, #8B4513 0%, #6B3410 100%)' : '#ffffff',
-                    color: isActive ? '#FFF8F0' : '#444444',
-                    border: isActive ? '1px solid #8B4513' : '1px solid #e0d2c0',
-                  }}
-                >
-                  <Icon size={16} className={isActive ? 'text-amber-400' : 'text-amber-800'} />
-                  <span className="font-medium whitespace-nowrap">{cat.name}</span>
-                  <span
-                    className={`text-[10px] font-bold px-2 py-0.5 rounded-full transition-colors ${
-                      isActive ? 'bg-[#D4AF37] text-amber-950' : 'bg-[#f0e0cc] text-[#8B4513]'
-                    }`}
-                  >
-                    {cat.count}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Mobile Swipe Hint */}
-          <div className="sm:hidden flex items-center justify-center gap-1 text-[11px] text-amber-900/60 mt-1">
-            <span>Swipe categories</span>
-            <ChevronRight size={12} className="animate-pulse" />
-          </div>
-        </div>
-
-        {/* ACTIVE CATEGORY HEADING & PRODUCT COUNT BAR */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6 sm:mb-8 pb-3 border-b border-amber-200/60">
-          <div className="flex items-center gap-3">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-900/10 border border-amber-800/20 flex items-center justify-center text-amber-900 flex-shrink-0">
-              <Grid size={18} />
-            </div>
-            <div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900" style={{ fontFamily: 'Georgia, serif' }}>
-                {activeCategoryObj?.name || 'All Collection'}
-              </h3>
-              <p className="text-[11px] sm:text-xs text-gray-500">
-                Displaying top export items ({displayedProducts.length} items)
-              </p>
-            </div>
-          </div>
-
-          <Link
-            href={
-              selectedCategory === 'all'
-                ? '/products'
-                : `/products?category=${encodeURIComponent(activeCategoryObj?.name || '')}`
-            }
-            className="text-xs font-bold text-[#8B4513] hover:text-amber-900 flex items-center gap-1.5 transition-colors self-end sm:self-auto"
-          >
-            <span>View Complete Catalogue</span>
-            <ArrowRight size={14} />
-          </Link>
-        </div>
-
-        {/* PRODUCTS GRID */}
-        {displayedProducts.length === 0 ? (
-          <div className="text-center py-16 bg-white rounded-2xl border border-stone-200">
-            <p className="text-base text-gray-500 font-medium mb-4">
-              No products found in this category.
-            </p>
-            <Link href="/products" className="btn-primary px-6 py-2.5 text-xs font-semibold">
-              Browse All Catalogue
-            </Link>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {displayedProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-        )}
-
-        {/* BOTTOM ACTION BUTTON */}
-        <div className="text-center mt-10 sm:mt-12">
-          <Link
-            href={
-              selectedCategory === 'all'
-                ? '/products'
-                : `/products?category=${encodeURIComponent(activeCategoryObj?.name || '')}`
-            }
-            className="btn-primary px-8 sm:px-9 py-3 sm:py-3.5 text-xs sm:text-sm font-semibold inline-flex items-center gap-2.5 shadow-lg hover:scale-105 transition-transform"
-          >
-            <span>Explore All {activeCategoryObj?.name || 'Handicrafts'}</span>
-            <ArrowRight size={16} />
-          </Link>
-        </div>
-
+        <motion.div style={{ x }} className="flex gap-4 md:gap-8 px-6 md:px-16 z-10 w-[max-content] pb-8">
+           {displayCategories.map((cat) => (
+             <Link 
+               key={cat.id} 
+               href={`/products?category=${encodeURIComponent(cat.name)}`}
+               className="relative group flex-shrink-0 w-[80vw] sm:w-[380px] md:w-[420px] h-[55vh] min-h-[350px] max-h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-transparent hover:border-[#D4AF37]/50 transition-all duration-500"
+             >
+               <img 
+                 src={categoryImages[cat.name] || '/images/wooden-category.avif'} 
+                 alt={cat.name}
+                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+               />
+               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+               
+               <div className="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+                 <p className="text-[#D4AF37] font-bold tracking-widest uppercase text-[10px] md:text-xs mb-2">Collection</p>
+                 <h3 className="text-white text-2xl md:text-3xl font-bold mb-3 font-serif leading-tight">{cat.name}</h3>
+                 <div className="flex items-center text-white/90 gap-2 font-medium text-sm md:text-base group-hover:text-[#D4AF37] transition-colors">
+                   <span>Explore Range</span>
+                   <ArrowRight size={18} className="transform group-hover:translate-x-2 transition-transform duration-300" />
+                 </div>
+               </div>
+             </Link>
+           ))}
+           
+           {/* View all card */}
+           <Link 
+               href="/products"
+               className="relative group flex-shrink-0 w-[80vw] sm:w-[380px] md:w-[420px] h-[55vh] min-h-[350px] max-h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl border border-[#D4AF37]/20 bg-[#141414] flex items-center justify-center transition-all duration-700 hover:border-[#D4AF37]/60"
+             >
+               {/* Ambient Glow */}
+               <div className="absolute inset-0 opacity-40 transition-opacity duration-700 group-hover:opacity-80" style={{
+                  backgroundImage: 'radial-gradient(circle at center, rgba(212,175,55,0.3) 0%, transparent 60%)',
+                }}></div>
+                
+               <div className="relative z-10 flex flex-col items-center p-8 text-center">
+                 <div className="w-20 h-20 rounded-full border border-[#D4AF37]/30 bg-black/50 backdrop-blur-sm flex items-center justify-center mb-6 group-hover:bg-[#D4AF37] transition-all duration-500 shadow-[0_0_30px_rgba(212,175,55,0.15)] group-hover:shadow-[0_0_40px_rgba(212,175,55,0.4)]">
+                    <ArrowRight size={32} className="text-[#D4AF37] group-hover:text-black transition-colors duration-500" />
+                 </div>
+                 <h3 className="text-white text-3xl md:text-4xl font-bold mb-2 font-serif tracking-wide group-hover:scale-105 transition-transform duration-500">View Entire</h3>
+                 <h3 className="text-[#D4AF37] text-3xl md:text-4xl font-bold font-serif italic group-hover:scale-105 transition-transform duration-500">Catalogue</h3>
+                 <p className="text-gray-400 mt-4 text-sm max-w-[250px] opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                   Discover our complete range of handcrafted masterpieces
+                 </p>
+               </div>
+             </Link>
+        </motion.div>
       </div>
     </section>
   );

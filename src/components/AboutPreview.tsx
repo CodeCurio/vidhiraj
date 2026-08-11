@@ -32,7 +32,7 @@ const WHY_US_HIGHLIGHTS = [
   {
     icon: Leaf,
     title: 'Eco-Friendly & Sustainable',
-    desc: 'Sustainably sourced natural wood, pure brass, and coconut shells with 100% recyclable export packaging.',
+    desc: 'Sustainably sourced natural wood and pure brass with 100% recyclable export packaging.',
     tag: 'Sustainable',
   },
   {

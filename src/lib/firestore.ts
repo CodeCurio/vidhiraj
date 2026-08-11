@@ -6,7 +6,6 @@ import type { Product, Category, Inquiry, GalleryImage, Blog, SiteSettings } fro
 const FALLBACK_CATEGORIES: Category[] = [
   { id: 'wood', name: 'Wooden Handicraft', slug: 'wooden-handicraft', showOnHomepage: true },
   { id: 'brass', name: 'Brass Handicraft', slug: 'brass-handicraft', showOnHomepage: true },
-  { id: 'coconut', name: 'Coconut Handicraft', slug: 'coconut-handicraft', showOnHomepage: true },
   { id: 'gifting', name: 'Gifting & Hampers', slug: 'gifting-hampers', showOnHomepage: true },
 ];
 
@@ -37,19 +36,7 @@ const FALLBACK_PRODUCTS: Product[] = [
     tags: ['brass', 'ganesha', 'idol', 'antique'],
     createdAt: new Date('2026-01-02'),
   },
-  {
-    id: 'coconut-shell-bowl-set-03',
-    name: 'Organic Polished Coconut Shell Bowl & Spoon Set',
-    description: '100% natural eco-friendly coconut shell serving bowls polished with virgin coconut oil. Zero plastic, 100% biodegradable export quality.',
-    category: 'Coconut Handicraft',
-    images: ['https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80'],
-    minOrderQty: 50,
-    price: '$4 - $8 / set',
-    featured: true,
-    specifications: { Material: 'Natural Coconut Shell', Coating: 'Organic Coconut Oil', Diameter: '12-14 cm' },
-    tags: ['coconut', 'eco-friendly', 'bowls', 'kitchenware'],
-    createdAt: new Date('2026-01-03'),
-  },
+
   {
     id: 'wooden-dry-fruit-box-04',
     name: 'Luxury Brass Inlaid Wooden Dry Fruit Gift Box',
@@ -89,19 +76,7 @@ const FALLBACK_PRODUCTS: Product[] = [
     tags: ['spice box', 'kitchenware', 'rosewood'],
     createdAt: new Date('2026-01-06'),
   },
-  {
-    id: 'coconut-candle-holder-07',
-    name: 'Carved Coconut Shell Tealight Candle Holder',
-    description: 'Hand-carved coconut shell tea light holder with geometric star hole perforations that cast warm ambient shadows when lit.',
-    category: 'Coconut Handicraft',
-    images: ['https://images.unsplash.com/photo-1602872030219-aa326a6b8568?auto=format&fit=crop&w=800&q=80'],
-    minOrderQty: 50,
-    price: '$3 - $6 / pc',
-    featured: true,
-    specifications: { Material: 'Reclaimed Coconut Shell', Finish: 'Hand Carved' },
-    tags: ['coconut candle', 'tealight holder', 'eco decor'],
-    createdAt: new Date('2026-01-07'),
-  },
+
   {
     id: 'brass-bronze-buddha-head-08',
     name: 'Serene Brass Buddha Head Table Top Artifact',
