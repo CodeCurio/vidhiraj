@@ -7,6 +7,7 @@ import ReviewsSection from '@/components/ReviewsSection';
 import AboutPreview from '@/components/AboutPreview';
 import ProductsShowcase from '@/components/ProductsShowcase';
 import OurStorySection from '@/components/OurStorySection';
+import ManufacturingCapabilities from '@/components/ManufacturingCapabilities';
 import type { Product, Category } from '@/types';
 
 export const revalidate = 60;
@@ -37,120 +38,13 @@ export default async function HomePage() {
       {/* ABOUT PREVIEW */}
       <AboutPreview />
 
-      {/* MANUFACTURING CAPABILITIES */}
-      <section className="py-16 px-4" style={{ background: '#FFF8F0' }}>
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-sm font-semibold tracking-widest uppercase" style={{ color: '#D4AF37' }}>
-              Not Just Exporters
-            </span>
-            <h2 className="section-title mt-2">We Manufacture. We Export. We Deliver.</h2>
-            <p className="section-subtitle">
-              End-to-end capability — from raw material sourcing and in-house manufacturing to export documentation and global delivery.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-14">
-            <div>
-              <div className="space-y-5">
-                {[
-                  {
-                    icon: <Factory size={22} />,
-                    title: 'In-House Manufacturing',
-                    desc: 'Our own workshop with 100+ skilled artisans. Full production control — no outsourcing, no quality compromise.',
-                  },
-                  {
-                    icon: <Settings2 size={22} />,
-                    title: 'OEM / ODM Capability',
-                    desc: 'Custom designs, your logo, your colors, your packaging. We build products to your exact specifications.',
-                  },
-                  {
-                    icon: <Wrench size={22} />,
-                    title: 'Product Development',
-                    desc: 'From concept to prototype in 10–15 days. New product ranges developed on request with zero design fees.',
-                  },
-                  {
-                    icon: <Layers size={22} />,
-                    title: 'Multiple Product Lines',
-                    desc: 'Wooden artifacts, brass figurines, and more — all manufactured under one roof.',
-                  },
-                  {
-                    icon: <ShieldCheck size={22} />,
-                    title: '3-Stage Quality Control',
-                    desc: 'Every batch inspected at raw material intake, mid-production, and pre-shipment. Less than 0.5% defect rate.',
-                  },
-                ].map((item) => (
-                  <div key={item.title} className="flex items-start gap-4">
-                    <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                      style={{ background: 'rgba(139,69,19,0.1)' }}
-                    >
-                      <span style={{ color: '#8B4513' }}>{item.icon}</span>
-                    </div>
-                    <div>
-                      <h4 className="text-base font-bold mb-1" style={{ color: '#1C1C1C', fontFamily: 'Georgia, serif' }}>
-                        {item.title}
-                      </h4>
-                      <p className="text-sm leading-relaxed" style={{ color: '#666' }}>{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3 mt-8">
-                <Link href="/inquiry" className="btn-primary px-7 py-3 text-sm">
-                  Request OEM Quote
-                </Link>
-                <Link href="/why-choose-us" className="btn-gold px-7 py-3 text-sm">
-                  Our Manufacturing Edge
-                </Link>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div
-                className="rounded-2xl overflow-hidden"
-                style={{ paddingTop: '120%', position: 'relative' }}
-              >
-                <Image
-                  src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=400&q=80"
-                  alt="Artisan crafting handicrafts"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  sizes="200px"
-                />
-              </div>
-              <div className="flex flex-col gap-4">
-                <div
-                  className="rounded-2xl overflow-hidden"
-                  style={{ paddingTop: '60%', position: 'relative' }}
-                >
-                  <Image
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80"
-                    alt="Wooden handicraft workshop"
-                    fill
-                    style={{ objectFit: 'cover' }}
-                    sizes="200px"
-                  />
-                </div>
-                <div
-                  className="rounded-xl p-5 text-center"
-                  style={{ background: 'linear-gradient(135deg, #8B4513, #6B3410)' }}
-                >
-                  <div className="text-3xl font-bold mb-1" style={{ color: '#D4AF37', fontFamily: 'Georgia, serif' }}>100+</div>
-                  <div className="text-xs text-white opacity-80">Skilled Artisans</div>
-                  <div className="text-3xl font-bold mt-3 mb-1" style={{ color: '#D4AF37', fontFamily: 'Georgia, serif' }}>200+</div>
-                  <div className="text-xs text-white opacity-80">Product Designs</div>
-                  <div className="text-3xl font-bold mt-3 mb-1" style={{ color: '#D4AF37', fontFamily: 'Georgia, serif' }}>15 Days</div>
-                  <div className="text-xs text-white opacity-80">Sample Lead Time</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* MANUFACTURING CAPABILITIES WITH ANIMATED STATS & DIAGONAL DARK/LIGHT CARDS */}
+      <ManufacturingCapabilities />
 
           {/* Manufacturing process steps */}
           <div
-            className="rounded-2xl p-8"
-            style={{ background: '#fff', border: '1px solid #f0e0cc' }}
+            className="rounded-2xl p-8 max-w-7xl mx-auto my-12"
+            style={{ background: '#FFF8F0', border: '1px solid #f0e0cc' }}
           >
             <h3 className="text-lg font-bold text-center mb-8" style={{ color: '#1C1C1C', fontFamily: 'Georgia, serif' }}>
               Our Manufacturing Process
@@ -184,8 +78,6 @@ export default async function HomePage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
 
 
 
