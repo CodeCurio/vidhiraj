@@ -6,6 +6,7 @@ import HeroSection from '@/components/HeroSection';
 import ReviewsSection from '@/components/ReviewsSection';
 import AboutPreview from '@/components/AboutPreview';
 import ProductsShowcase from '@/components/ProductsShowcase';
+import OurStorySection from '@/components/OurStorySection';
 import type { Product, Category } from '@/types';
 
 export const revalidate = 60;
@@ -27,11 +28,14 @@ export default async function HomePage() {
     <>
       <HeroSection />
 
+      {/* PRODUCTS SHOWCASE SECTION WITH CATEGORY CAROUSEL */}
+      <ProductsShowcase allProducts={allProducts} categories={categories} />
+
+      {/* OUR STORY & ANIMATED STATS SECTION */}
+      <OurStorySection />
+
       {/* ABOUT PREVIEW */}
       <AboutPreview />
-
-      {/* PRODUCTS SHOWCASE SECTION WITH CATEGORY FILTER TABS */}
-      <ProductsShowcase allProducts={allProducts} categories={categories} />
 
       {/* MANUFACTURING CAPABILITIES */}
       <section className="py-16 px-4" style={{ background: '#FFF8F0' }}>

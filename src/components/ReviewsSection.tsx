@@ -14,7 +14,6 @@ interface Review {
   flag: string;
   avatar: string;
   rating: number;
-  date: string;
   source: 'google' | 'etsy';
   verifiedProduct: string;
   title: string;
@@ -32,7 +31,6 @@ const REVIEWS: Review[] = [
     flag: '🇬🇧',
     avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format&fit=crop&q=80',
     rating: 5,
-    date: '12 Jan 2026',
     source: 'google',
     verifiedProduct: '1,200 Pcs Handcrafted Wooden Sculptures',
     title: 'Zero breakage in transit & exceptional hand-carving quality!',
@@ -48,14 +46,27 @@ const REVIEWS: Review[] = [
     flag: '🇺🇸',
     avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&auto=format&fit=crop&q=80',
     rating: 5,
-    date: '28 Dec 2025',
     source: 'etsy',
     verifiedProduct: '850 Pcs Solid Brass Figurines & Idols',
     title: 'Remarkable weight, brass purity, and OEM laser branding',
     reviewText: 'Finding authentic Indian brassware suppliers who adhere to strict weight tolerances and lead-free alloy standards used to be difficult. Vidhiraj provided complete metallurgy lab certificates and laser-etched our brand logo on the base of every brass figurine. Repeat orders are already in production!',
     tag: 'Brass Figurines',
   },
-  
+  {
+    id: '3',
+    name: 'Elena Rostova',
+    role: 'Senior Sourcing Manager',
+    company: 'Boutique Home & Decor Solutions',
+    location: 'Munich, Germany',
+    flag: '🇩🇪',
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format&fit=crop&q=80',
+    rating: 5,
+    source: 'google',
+    verifiedProduct: '1,500 Sets Macrame Wall Hangings & Cushion Covers',
+    title: 'Exceptional knotting quality & eco-friendly cotton materials',
+    reviewText: 'We ordered 1,500 pieces of Macrame Wall Hangings and Macrame Cushion Covers for our European home decor retail chain. The craftsmanship and attention to detail are stunning. The cotton quality is 100% premium and our retail customers absolutely love the bohemian design aesthetic.',
+    tag: 'Macrame Collection',
+  },
   {
     id: '4',
     name: 'Evelyn Tan',
@@ -65,7 +76,6 @@ const REVIEWS: Review[] = [
     flag: '🇸🇬',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',
     rating: 5,
-    date: '19 Oct 2025',
     source: 'etsy',
     verifiedProduct: '500 Customized Gifting Hampers',
     title: 'Exquisite custom packaging & low MOQ for luxury hampers',
@@ -81,17 +91,30 @@ const REVIEWS: Review[] = [
     flag: '🇦🇪',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80',
     rating: 5,
-    date: '15 Sep 2025',
     source: 'google',
     verifiedProduct: '40ft Container Wooden Furniture & Carvings',
     title: 'Consistent bulk supply & direct factory pricing without agents',
     reviewText: 'We have been importing handicrafts from India for over 12 years. Working with Vidhiraj Global Impex was a game changer — clear WhatsApp updates with video inspections prior to stuffing containers. Their pricing is unbeatable for the level of handmade craftsmanship.',
     tag: 'Wooden Handicrafts',
   },
-  
+  {
+    id: '6',
+    name: 'David Miller',
+    role: 'Procurement Director',
+    company: 'Nordic Play & Learning AU',
+    location: 'Sydney, Australia',
+    flag: '🇦🇺',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&auto=format&fit=crop&q=80',
+    rating: 5,
+    source: 'etsy',
+    verifiedProduct: '2,000 Pcs Wooden Puzzles & Educational Toys',
+    title: 'Non-toxic child-safe finish & flawless wood carving',
+    reviewText: 'Sourcing handcrafted wooden toys and brain teaser puzzles from Vidhiraj was the best decision for our Australian stores. All products passed EN71 and ASTM safety standards seamlessly. Smooth edges, vivid natural wood tones, and fast maritime dispatch!',
+    tag: 'Wooden Handicrafts',
+  },
 ];
 
-const CATEGORIES = ['All', 'Wooden Handicrafts', 'Brass Figurines', 'Custom OEM Orders'];
+const CATEGORIES = ['All', 'Wooden Handicrafts', 'Brass Figurines', 'Macrame Collection', 'Custom OEM Orders'];
 
 export default function ReviewsSection() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -254,7 +277,6 @@ export default function ReviewsSection() {
                         Etsy Wholesale
                       </span>
                     )}
-                    <span className="text-[11px] text-gray-400">{review.date}</span>
                   </div>
 
                   <div className="flex items-center gap-0.5">

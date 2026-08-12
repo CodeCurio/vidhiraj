@@ -4,9 +4,14 @@ import type { Product, Category, Inquiry, GalleryImage, Blog, SiteSettings } fro
 // Fallback products and categories to ensure the site displays products cleanly on Vercel
 // even if Firebase Admin environment variables are not configured in Vercel settings.
 const FALLBACK_CATEGORIES: Category[] = [
-  { id: 'wood', name: 'Wooden Handicraft', slug: 'wooden-handicraft', showOnHomepage: true },
-  { id: 'brass', name: 'Brass Handicraft', slug: 'brass-handicraft', showOnHomepage: true },
-  { id: 'gifting', name: 'Gifting & Hampers', slug: 'gifting-hampers', showOnHomepage: true },
+  { id: 'copper-handicraft', name: 'Copper Handicraft', slug: 'copper-handicraft', image: '/categories/copper-handicraft.jpg', showOnHomepage: true },
+  { id: 'macrame-bags', name: 'Macrame Bags', slug: 'macrame-bags', image: '/categories/macrame-bags.jpg', showOnHomepage: true },
+  { id: 'macrame-cushion', name: 'Macrame Cushion', slug: 'macrame-cushion', image: '/categories/macrame-cushion.jpg', showOnHomepage: true },
+  { id: 'macrame-wall-hanging', name: 'Macrame Wall Hanging', slug: 'macrame-wall-hanging', image: '/categories/macrame-wall-hanging.jpg', showOnHomepage: true },
+  { id: 'wooden-puzzles', name: 'Wooden Puzzles', slug: 'wooden-puzzles', image: '/categories/wooden-puzzles.jpg', showOnHomepage: true },
+  { id: 'wooden-toys', name: 'Wooden Toys', slug: 'wooden-toys', image: '/categories/wooden-toys.jpg', showOnHomepage: true },
+  { id: 'home-decor', name: 'Home Decor', slug: 'home-decor', image: '/categories/home-decor.jpg', showOnHomepage: true },
+  { id: 'kitchenware', name: 'Kitchenware', slug: 'kitchenware', image: '/categories/kitchenware.jpg', showOnHomepage: true },
 ];
 
 const FALLBACK_PRODUCTS: Product[] = [
