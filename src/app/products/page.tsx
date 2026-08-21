@@ -43,7 +43,7 @@ export default async function ProductsPage({
 
   try {
     [products, categories] = await Promise.all([
-      getProducts(category),
+      getProducts(),
       getCategories(),
     ]);
   } catch {

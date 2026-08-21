@@ -63,9 +63,9 @@ export default async function Footer() {
               Premium handicraft exporter from India. Specializing in 100% handmade wooden artifacts, brass figurines, and handcrafted decor — eco-friendly crafted for international buyers and wholesalers.
             </p>
 
-            {/* Social Icons */}
+            {/* Social Icons - FB, Insta, LinkedIn, YouTube */}
             <div className="flex items-center gap-2.5">
-              {/* Facebook */}
+              {/* 1. Facebook */}
               <a
                 href="https://facebook.com/vidhirajglobalimpex"
                 target="_blank"
@@ -79,7 +79,7 @@ export default async function Footer() {
                 </svg>
               </a>
 
-              {/* Instagram */}
+              {/* 2. Instagram */}
               <a
                 href="https://instagram.com/vidhirajglobalimpex"
                 target="_blank"
@@ -93,7 +93,7 @@ export default async function Footer() {
                 </svg>
               </a>
 
-              {/* LinkedIn */}
+              {/* 3. LinkedIn */}
               <a
                 href="https://linkedin.com/company/vidhirajglobalimpex"
                 target="_blank"
@@ -107,31 +107,17 @@ export default async function Footer() {
                 </svg>
               </a>
 
-              {/* Twitter / X */}
+              {/* 4. YouTube */}
               <a
-                href="https://twitter.com/vidhirajglobal"
+                href="https://youtube.com/@vidhirajglobalimpex"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter / X"
+                aria-label="YouTube"
                 className="w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110"
-                style={{ background: '#000000' }}
+                style={{ background: '#FF0000' }}
               >
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="white">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </a>
-
-              {/* WhatsApp */}
-              <a
-                href={`https://wa.me/${waNumber}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="w-8 h-8 rounded-full flex items-center justify-center transition-transform hover:scale-110"
-                style={{ background: '#25D366' }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15" height="15" fill="white">
-                  <path d="M16.002 2C8.28 2 2 8.28 2 16.002c0 2.478.664 4.8 1.82 6.81L2 30l7.378-1.786A13.96 13.96 0 0016.002 30C23.72 30 30 23.72 30 16.002 30 8.28 23.72 2 16.002 2zm6.358 19.92c-.348-.175-2.064-1.016-2.384-1.133-.32-.117-.553-.175-.786.175-.232.348-.9 1.133-1.104 1.365-.203.232-.405.262-.754.087-.348-.175-1.47-.542-2.8-1.727-1.034-.924-1.733-2.064-1.936-2.412-.203-.348-.022-.535.153-.708.158-.155.348-.406.523-.61.175-.203.232-.348.348-.58.116-.232.058-.435-.03-.61-.087-.175-.786-1.892-1.077-2.59-.283-.68-.57-.587-.785-.598l-.668-.012c-.232 0-.61.087-.928.435-.32.348-1.22 1.19-1.22 2.903s1.25 3.368 1.424 3.6c.175.232 2.46 3.754 5.961 5.26.833.36 1.483.574 1.99.734.836.265 1.597.228 2.199.138.67-.1 2.064-.842 2.355-1.656.29-.813.29-1.51.203-1.656-.087-.146-.32-.232-.668-.406z" />
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="white">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
               </a>
             </div>

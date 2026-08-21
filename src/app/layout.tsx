@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import LanguageBar from '@/components/LanguageBar';
 import EnquiryPopup from '@/components/EnquiryPopup';
+import SmoothScrollProvider from '@/components/SmoothScrollProvider';
 import { getCategories, getSettings } from '@/lib/firestore';
 import type { SiteSettings } from '@/types';
 import Script from 'next/script';
@@ -45,8 +46,11 @@ const organizationSchema = {
     availableLanguage: ['English', 'Hindi', 'Arabic', 'German', 'French', 'Spanish', 'Japanese', 'Russian', 'Italian', 'Portuguese'],
   },
   sameAs: [
-    'https://www.indiamart.com/vidhirajglobalimpex',
+    'https://facebook.com/vidhirajglobalimpex',
+    'https://instagram.com/vidhirajglobalimpex',
     'https://www.linkedin.com/company/vidhiraj-global-impex',
+    'https://youtube.com/@vidhirajglobalimpex',
+    'https://www.indiamart.com/vidhirajglobalimpex',
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -172,37 +176,39 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </head>
       <body suppressHydrationWarning>
-        {/* Hidden Google Translate element — controlled by LanguageBar */}
-        <Script id="google-translate-init" strategy="afterInteractive">
-          {`function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-              { pageLanguage: 'en', autoDisplay: false, includedLanguages: 'en,hi,ar,de,fr,es,zh-CN,zh-TW,ja,ko,pt,ru,it,nl,pl,tr,id,vi,th,ms,sv,da,no,fi' },
-              'google_translate_element'
-            );
-          }`}
-        </Script>
-        <Script
-          id="google-translate-script"
-          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-          strategy="afterInteractive"
-        />
+        <SmoothScrollProvider>
+          {/* Hidden Google Translate element — controlled by LanguageBar */}
+          <Script id="google-translate-init" strategy="afterInteractive">
+            {`function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                { pageLanguage: 'en', autoDisplay: false, includedLanguages: 'en,hi,ar,de,fr,es,zh-CN,zh-TW,ja,ko,pt,ru,it,nl,pl,tr,id,vi,th,ms,sv,da,no,fi' },
+                'google_translate_element'
+              );
+            }`}
+          </Script>
+          <Script
+            id="google-translate-script"
+            src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+            strategy="afterInteractive"
+          />
 
-        {/* Invisible GT widget — LanguageBar talks to it via .goog-te-combo */}
-        <div id="google_translate_element" style={{ position: 'absolute', top: '-9999px', left: '-9999px' }} />
+          {/* Invisible GT widget — LanguageBar talks to it via .goog-te-combo */}
+          <div id="google_translate_element" style={{ position: 'absolute', top: '-9999px', left: '-9999px' }} />
 
-        {/* Top bar with language selector */}
-        <LanguageBar gst={settings.gst || ''} />
+          {/* Top bar with language selector */}
+          <LanguageBar gst={settings.gst || ''} />
 
-        {/* Sticky navbar sits below the top bar */}
-        <Navbar categories={categories} />
+          {/* Sticky navbar sits below the top bar */}
+          <Navbar categories={categories} />
 
-        <main className="bg-white flex-1 w-full" style={{ paddingTop: '96px', flex: '1 0 auto' }}>{children}</main>
-        <Footer />
-        <WhatsAppButton number={waNumber} />
-        <EnquiryPopup
-          enabled={settings.popupEnabled !== false}
-          delaySeconds={typeof settings.popupDelay === 'number' ? settings.popupDelay : 15}
-        />
+          <main className="bg-white flex-1 w-full" style={{ paddingTop: '96px', flex: '1 0 auto' }}>{children}</main>
+          <Footer />
+          <WhatsAppButton number={waNumber} />
+          <EnquiryPopup
+            enabled={settings.popupEnabled !== false}
+            delaySeconds={typeof settings.popupDelay === 'number' ? settings.popupDelay : 15}
+          />
+        </SmoothScrollProvider>
       </body>
     </html>
   );
